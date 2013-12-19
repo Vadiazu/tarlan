@@ -1,0 +1,46 @@
+@import "compass";
+//@import "baseVariables";
+
+//*----------icons settings----------------*/
+//@import "icons/*.png";
+//@include all-icons-sprites;
+//$custom-icons: sprite-map("icons/*.png");
+
+//*Sticky footer*//
+@mixin sticky-footer($footer-height, $root-selector: unquote("#root"), $root-footer-selector: unquote("#root_footer"), $footer-selector: unquote("#footer")) {
+    html, body {
+        height: 100%; }
+    #{$root-selector} {
+        min-height: 100%;
+        #{$root-footer-selector} {
+            height: $footer-height; } }
+    #{$footer-selector} {
+        margin-top: -$footer-height;
+        height: $footer-height; }
+}
+
+//*Font normalize*//
+@mixin normal-font($font-size, $line-height) {
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+//*Icon normalize*//
+@mixin get-icon($icon-name) {
+    @include icons-sprite($icon-name);
+    @include sprite-dimensions($custom-icons, $icon-name);
+    display: inline-block;
+}
+
+//*Color placeholder*//
+@mixin placeholder($color) {
+    &.placeholder {
+        color: $color;
+    }
+    &:-moz-placeholder {
+        color: $color;
+    }
+    &::-webkit-input-placeholder {
+        color: $color;
+    }
+}

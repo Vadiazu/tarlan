@@ -303,6 +303,10 @@ table {
   border-spacing: 0;
 }
 
+.test {
+  color: red;
+}
+
 a {
   text-decoration: underline;
 }
