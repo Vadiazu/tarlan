@@ -7,9 +7,11 @@
     [class*="work-"]{
         position: absolute;
         cursor: pointer;
+        //@include single-transition(all, 0.2s, ease-in-out);
 
         img{
             @include box-shadow(0 2px 30px rgba(#1e3239,0.80));
+            @include single-transition(all, 0.2s, ease-in-out);
             border: 3px solid #fff;
         }
 
@@ -17,6 +19,8 @@
             position: absolute;
             left: 3px;
             bottom: 3px;
+            @include single-transition(opacity, 0.1s, ease-in-out);
+            @include opacity(0);
 
             h2, h3{
                 background: #fff;
@@ -35,6 +39,248 @@
                 display: inline-block;
                 margin: 0 0 14px 0;
             }
+        }
+
+        &:hover{
+            z-index: 10;
+
+            .work-info{
+                @include opacity(1);
+            }
+        }
+    }
+
+    .work-1{
+        left: 0;
+        top: 53px;
+        z-index: 6;
+
+        &:hover{
+            img{
+                width: 270px;
+                height: 178px;
+            }
+        }
+
+        img{
+            width: 250px;
+            height: 158px;
+        }
+    }
+
+    .work-2{
+        left: 40px;
+        top: 120px;
+        z-index: 1;
+
+        &:hover{
+            img{
+                width: 207px;
+                height: 270px;
+            }
+        }
+
+        img{
+            width: 187px;
+            height: 250px;
+        }
+    }
+
+    .work-3{
+        left: 233px;
+        top: 25px;
+        z-index: 4;
+
+        &:hover{
+            img{
+                width: 202px;
+                height: 270px;
+            }
+        }
+
+        img{
+            width: 182px;
+            height: 250px;
+        }
+    }
+
+    .work-4{
+        left: 195px;
+        top: 166px;
+        z-index: 4;
+
+        &:hover{
+            img{
+                width: 270px;
+                height: 196px;
+            }
+        }
+
+        img{
+            width: 250px;
+            height: 176px;
+        }
+    }
+
+    .work-5{
+        left: 312px;
+        top: 53px;
+        z-index: 3;
+
+        &:hover{
+            img{
+                width: 269px;
+                height: 181px;
+            }
+        }
+
+        img{
+            width: 249px;
+            height: 161px;
+        }
+    }
+
+    .work-6{
+        left: 384px;
+        top: 184px;
+        z-index: 1;
+
+        &:hover{
+            img{
+                width: 270px;
+                height: 194px;
+            }
+        }
+
+        img{
+            width: 250px;
+            height: 174px;
+        }
+    }
+
+    .work-7{
+        left: 530px;
+        top: 77px;
+        z-index: 2;
+
+        &:hover{
+            img{
+                width: 226px;
+                height: 269px;
+            }
+        }
+
+        img{
+            width: 206px;
+            height: 249px;
+        }
+    }
+
+    .work-8{
+        left: 642px;
+        top: 40px;
+        z-index: 2;
+
+        &:hover{
+            img{
+                width: 269px;
+                height: 196px;
+            }
+        }
+
+        img{
+            width: 249px;
+            height: 176px;
+        }
+    }
+
+    .work-9{
+        left: 685px;
+        top: 120px;
+        z-index: 3;
+
+        &:hover{
+            img{
+                width: 210px;
+                height: 270px;
+            }
+        }
+
+        img{
+            width: 190px;
+            height: 250px;
+        }
+    }
+
+    .work-10{
+        left: 855px;
+        top: 25px;
+        z-index: 4;
+
+        &:hover{
+            img{
+                width: 196px;
+                height: 270px;
+            }
+        }
+
+        img{
+            width: 176px;
+            height: 250px;
+        }
+    }
+
+    .work-11{
+        left: 860px;
+        top: 173px;
+        z-index: 1;
+
+        &:hover{
+            img{
+                width: 270px;
+                height: 198px;
+            }
+        }
+
+        img{
+            width: 250px;
+            height: 178px;
+        }
+    }
+
+    .work-12{
+        left: 985px;
+        top: 53px;
+        z-index: 3;
+
+        &:hover{
+            img{
+                width: 269px;
+                height: 169px;
+            }
+        }
+
+        img{
+            width: 249px;
+            height: 149px;
+        }
+    }
+
+    .work-13{
+        left: 1094px;
+        top: 76px;
+        z-index: 2;
+
+        &:hover{
+            img{
+                width: 216px;
+                height: 270px;
+            }
+        }
+
+        img{
+            width: 196px;
+            height: 250px;
         }
     }
 }
