@@ -303,8 +303,43 @@ table {
   border-spacing: 0;
 }
 
-.test {
-  color: red;
+.custom-works {
+  width: 1300px;
+  min-height: 400px;
+  border: 1px solid red;
+  position: relative;
+}
+.custom-works [class*="work-"] {
+  position: absolute;
+  cursor: pointer;
+}
+.custom-works [class*="work-"] img {
+  -webkit-box-shadow: 0 2px 30px rgba(30, 50, 57, 0.8);
+  -moz-box-shadow: 0 2px 30px rgba(30, 50, 57, 0.8);
+  box-shadow: 0 2px 30px rgba(30, 50, 57, 0.8);
+  border: 3px solid #fff;
+}
+.custom-works [class*="work-"] .work-info {
+  position: absolute;
+  left: 3px;
+  bottom: 3px;
+}
+.custom-works [class*="work-"] .work-info h2, .custom-works [class*="work-"] .work-info h3 {
+  background: #fff;
+  color: #464646;
+  padding: 5px 6px;
+}
+.custom-works [class*="work-"] .work-info h2 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 10px 0;
+}
+.custom-works [class*="work-"] .work-info h3 {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 1px 7px;
+  display: inline-block;
+  margin: 0 0 14px 0;
 }
 
 .sprite-image-sprite {
@@ -332,7 +367,7 @@ a:hover {
 }
 
 .fl-right {
-  float: right;
+  float: left;
 }
 
 .clear:before,

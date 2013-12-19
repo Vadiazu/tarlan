@@ -1,3 +1,40 @@
-.test{
-    color: red;
+.custom-works{
+    width: 1300px;
+    min-height: 400px;
+    border: 1px solid red;
+    position: relative;
+
+    [class*="work-"]{
+        position: absolute;
+        cursor: pointer;
+
+        img{
+            @include box-shadow(0 2px 30px rgba(#1e3239,0.80));
+            border: 3px solid #fff;
+        }
+
+        .work-info{
+            position: absolute;
+            left: 3px;
+            bottom: 3px;
+
+            h2, h3{
+                background: #fff;
+                color: #464646;
+                padding: 5px 6px;
+            }
+
+            h2{
+                @include normal-font(16px, 24px);
+                margin: 0 0 10px 0;
+            }
+
+            h3{
+                @include normal-font(12px, 18px);
+                padding: 1px 7px;
+                display: inline-block;
+                margin: 0 0 14px 0;
+            }
+        }
+    }
 }
