@@ -332,7 +332,7 @@ a:hover {
 }
 
 .fl-right {
-  float: left;
+  float: right;
 }
 
 .clear:before,
@@ -343,4 +343,10 @@ a:hover {
 
 .clear:after {
   clear: both;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
