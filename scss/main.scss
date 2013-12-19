@@ -2,6 +2,8 @@
 @import "normalize";
 @import "includes";
 
+$sprite-image-dimensions: true;
+@import "sprite-image/*.png";
 a{
   text-decoration: underline;
   &:hover{
