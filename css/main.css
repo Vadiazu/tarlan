@@ -313,3 +313,30 @@ a {
 a:hover {
   text-decoration: none;
 }
+
+.center-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: left;
+}
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
