@@ -4,13 +4,18 @@
 @import "includes";
 
 
-$sprite-image-dimensions: true;
+$sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
 a{
   text-decoration: underline;
   &:hover{
     text-decoration: none;
   }
+}
+
+body{
+  font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #636363;
 }
 
 .center-wrapper{
@@ -28,7 +33,7 @@ a{
 }
 
 .fl-right{
-  float: left;
+  float: right;
 }
 
 .clear:before,
@@ -45,4 +50,96 @@ a{
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+//top line
+.top-line{
+  background: #252525;
+  height: 35px;
+  color: #ffffff;
+  line-height: 33px;
+  a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .center-wrapper{
+    > div{
+      padding: 0 15px;
+    }
+  }
+  .drop-down-holder{
+    position: relative;
+    cursor: pointer;
+    > span{
+      border-bottom: 1px dashed #fff;
+      position: relative;
+      display: inline-block;
+      line-height: normal;
+      font-weight: bold;
+    }
+    &:hover > span{
+      border-bottom-color: transparent;
+    }
+    .drop-down{
+      position: absolute;
+      top: 0;
+      white-space: nowrap;
+      line-height: normal;
+      padding-top: 35px;
+      .background-container{
+        background: #252525;
+        @include box-shadow(inset 0 13px 10px -10px rgb(0, 0, 0));
+      }
+      li+li{
+        border-top: 1px solid #464646;
+      }
+      a{
+        display: block;
+        padding: 10px;
+        &:hover{
+          background: #464646;
+        }
+      }
+    }
+  }
+  .other-projects, .site-language{
+    .drop-down-holder > span:after{
+      content: '';
+      position: absolute;
+      @include sprite-image-sprite(dropdown-arrow);
+      right: -17px;
+      top: 2px;
+    }
+  }
+  .other-projects, .site-language{
+    .drop-down{
+      left: -10px;
+    }
+  }
+  .site-language {
+    position: relative;
+    padding: 0 27px 0 16px!important;
+    &:before, &:after{
+      content: '';
+      background: #464646;
+      position: absolute;
+      height: 20px;
+      top: 8px;
+      width: 1px;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+    .label{
+      color: #898989;
+      margin-right: 6px;
+      font-weight: bold;
+    }
+    ul{
+      min-width: 120px;
+    }
+  }
 }
