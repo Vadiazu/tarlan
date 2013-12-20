@@ -858,7 +858,6 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "robotolight";
   display: inline-block;
 }
 
@@ -904,6 +903,22 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.robotoBlack {
+  font-family: "robotoblack";
+}
+
+.robotoThin {
+  font-family: "robotothin";
+}
+
+.robotoLight, h2 {
+  font-family: "robotoLight";
+}
+
+.robotoBold {
+  font-family: "robotoBold";
 }
 
 .custom-works {

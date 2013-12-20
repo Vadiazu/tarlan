@@ -5,11 +5,6 @@ $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
 @import "includes";
 
-//custom fonts variables
-$fontRobotoBlack: "robotoblack";
-$fontRobotoBold: "robotobold";
-$fontRobotoLight: "robotolight";
-$fontRobotoThin: "robotothin";
 
 a{
   text-decoration: underline;
@@ -19,12 +14,12 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6{
-    font-family: $fontRobotoLight;
     display: inline-block;
 }
 
 h2{
     @include normal-font(32px, 32px);
+    @extend .robotoLight;
     border-bottom: 1px solid #2892BB;
 }
 
@@ -73,10 +68,10 @@ body{
 .robotoThin{
   font-family: "robotothin";
 }
-.robotoBlack{
+.robotoLight{
   font-family: "robotoLight";
 }
-.robotoBlack{
+.robotoBold{
   font-family: "robotoBold";
 }
 @import "includes";
