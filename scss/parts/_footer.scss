@@ -106,14 +106,9 @@
     .partners-block{
         height: 160px;
         background: #fff;
-        border: 1px solid red;
-
-        .bx-wrapper{
-            margin-top: 45px!important;
-        }
 
         .partners-inner{
-            height: 100%;
+            padding: 45px 0 0 0;
 
             .partners-slider{
                 @extend .list-reset;
@@ -124,6 +119,22 @@
                     text-align: center;
                     float: none!important;
                 }
+            }
+        }
+    }
+
+    .main-footer{
+        height: 345px;
+        background: #252525;
+
+        .main-footer-inner{
+            border: 1px solid red;
+
+            .footer-logo{
+                width: 77px;
+                height: 85px;
+                display: inline-block;
+                background: url("../img/logo.png") -20px 0 no-repeat;
             }
         }
     }

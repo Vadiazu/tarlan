@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     $(".partners-slider").bxSlider({
         auto: true,
-        pause: 8000,
+        pause: 10000,
         slideWidth: 135,
         slideMargin: 10,
         minSlides: 5,
