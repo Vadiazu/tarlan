@@ -644,7 +644,7 @@ input:focus {
 .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
   content: '';
   position: absolute;
-  background-position: 0 -18px;
+  background-position: 0 -123px;
   height: 14px;
   width: 17px;
   right: -17px;
@@ -728,7 +728,7 @@ input:focus {
 .top-line .search-container .find {
   position: absolute;
   border: none;
-  background-position: 0 0;
+  background-position: 0 -35px;
   height: 18px;
   width: 18px;
   right: 3px;
@@ -810,6 +810,22 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.robotoBlack {
+  font-family: "robotoblack";
+}
+
+.robotoThin {
+  font-family: "robotothin";
+}
+
+.robotoLight {
+  font-family: "robotolight";
+}
+
+.robotoBold {
+  font-family: "robotobold";
 }
 
 .custom-works {
@@ -1149,7 +1165,7 @@ input:focus {
 .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
   content: '';
   position: absolute;
-  background-position: 0 -18px;
+  background-position: 0 -123px;
   height: 14px;
   width: 17px;
   right: -17px;
@@ -1233,7 +1249,7 @@ input:focus {
 .top-line .search-container .find {
   position: absolute;
   border: none;
-  background-position: 0 0;
+  background-position: 0 -35px;
   height: 18px;
   width: 18px;
   right: 3px;
