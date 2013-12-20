@@ -1,3 +1,6 @@
+input:focus{
+  outline:none;
+}
 .dark-input{
   border: none;
   background: #464646;
@@ -5,4 +8,10 @@
   font-size: 12px;
   line-height: normal;
   padding: 5px 7px;
+}
+.placeholder-container{
+  position: relative;
+  label{
+    position: absolute;
+  }
 }
