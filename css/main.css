@@ -327,7 +327,7 @@ table {
   transition: all 0.2s ease-in-out;
   border: 3px solid #fff;
 }
-.custom-works [class*="work-"] .work-info {
+.custom-works [class*="work-"] .info-work {
   position: absolute;
   left: 3px;
   bottom: 3px;
@@ -338,17 +338,17 @@ table {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-.custom-works [class*="work-"] .work-info h2, .custom-works [class*="work-"] .work-info h3 {
+.custom-works [class*="work-"] .info-work h2, .custom-works [class*="work-"] .info-work h3 {
   background: #fff;
   color: #464646;
   padding: 5px 6px;
 }
-.custom-works [class*="work-"] .work-info h2 {
+.custom-works [class*="work-"] .info-work h2 {
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 10px 0;
 }
-.custom-works [class*="work-"] .work-info h3 {
+.custom-works [class*="work-"] .info-work h3 {
   font-size: 12px;
   line-height: 18px;
   padding: 1px 7px;
@@ -359,7 +359,7 @@ table {
   z-index: 10;
   margin: -10px 0 0 -10px;
 }
-.custom-works [class*="work-"]:hover .work-info {
+.custom-works [class*="work-"]:hover .info-work {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }

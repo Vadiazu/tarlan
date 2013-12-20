@@ -15,7 +15,7 @@
             border: 3px solid #fff;
         }
 
-        .work-info{
+        .info-work{
             position: absolute;
             left: 3px;
             bottom: 3px;
@@ -45,7 +45,7 @@
             z-index: 10;
             margin: -10px 0 0 -10px;
 
-            .work-info{
+            .info-work{
                 @include opacity(1);
             }
         }
