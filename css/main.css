@@ -303,6 +303,10 @@ table {
   border-spacing: 0;
 }
 
+.sprite-image-sprite, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
+  background: url('../img/sprite-image.png') no-repeat;
+}
+
 .custom-works {
   width: 1300px;
   min-height: 400px;
@@ -586,55 +590,6 @@ input:focus {
   box-shadow: 0 3px 7px 1px rgba(0, 0, 0, 0.75);
 }
 
-.sprite-image-sprite, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
-  background: url('../img/sprite-image.png') no-repeat;
-}
-
-a {
-  text-decoration: underline;
-}
-a:hover {
-  text-decoration: none;
-}
-
-body {
-  font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #636363;
-}
-
-.center-wrapper {
-  margin: 0 auto;
-  width: 1000px;
-}
-
-.center-margin {
-  margin: 0 auto;
-}
-
-.fl-left {
-  float: left;
-}
-
-.fl-right {
-  float: right;
-}
-
-.clear:before,
-.clear:after {
-  content: " ";
-  display: table;
-}
-
-.clear:after {
-  clear: both;
-}
-
-.list-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 .top-line {
   background: #252525;
   height: 35px;
@@ -758,4 +713,49 @@ body {
 .top-line .login .otherwise a:hover {
   text-decoration: none;
   background-color: transparent;
+}
+
+a {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+body {
+  font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #636363;
+}
+
+.center-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.center-margin {
+  margin: 0 auto;
+}
+
+.fl-left {
+  float: left;
+}
+
+.fl-right {
+  float: right;
+}
+
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
