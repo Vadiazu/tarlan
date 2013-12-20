@@ -126,4 +126,26 @@
       }
     }
   }
+  .search-container{
+    margin-top: 1px;
+    .placeholder-container{
+      display: block;
+    }
+    input[type="text"]{
+      padding-right: 22px;
+      width: 176px;
+    }
+    label{
+      left: 7px;
+      top: 9px;
+      line-height: normal;
+    }
+    .find{
+      position: absolute;
+      border: none;
+      @include sprite-image-sprite(top-search-ico);
+      right: 3px;
+      top: 8px;
+    }
+  }
 }

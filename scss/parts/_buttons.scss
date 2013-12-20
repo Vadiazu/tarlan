@@ -7,10 +7,11 @@
   font-weight: bold;
   padding: 0 13px;
   border: 2px solid #fff;
+  background: url("../img/gradient-btn-small.png");
   @include border-radius(28px);
-  background-color: #919191; // Old browsers
-  @include filter-gradient(#919191, #323232, vertical); // IE6-9
-  @include background-image(linear-gradient(top,  #919191 0%,#585858 50%,#323232 100%));
   @include box-sizing(border-box);
   @include box-shadow(0 3px 7px 1px rgba(0, 0, 0, .75));
+  &.large{
+    background: url("../img/gradient-btn.png");
+  }
 }
