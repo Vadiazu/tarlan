@@ -3,8 +3,6 @@
 @import "customMixins";
 $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
-@import "includes";
-
 
 a{
   text-decoration: underline;
@@ -51,3 +49,5 @@ body{
   margin: 0;
   list-style: none;
 }
+
+@import "includes";
