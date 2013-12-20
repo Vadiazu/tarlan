@@ -7,7 +7,7 @@
     [class*="work-"]{
         position: absolute;
         cursor: pointer;
-        //@include single-transition(all, 0.2s, ease-in-out);
+        @include single-transition(all, 0.2s, ease-in-out);
 
         img{
             @include box-shadow(0 2px 30px rgba(#1e3239,0.80));
@@ -43,6 +43,7 @@
 
         &:hover{
             z-index: 10;
+            margin: -10px 0 0 -10px;
 
             .work-info{
                 @include opacity(1);

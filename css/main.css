@@ -312,6 +312,10 @@ table {
 .custom-works [class*="work-"] {
   position: absolute;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 .custom-works [class*="work-"] img {
   -webkit-box-shadow: 0 2px 30px rgba(30, 50, 57, 0.8);
@@ -353,6 +357,7 @@ table {
 }
 .custom-works [class*="work-"]:hover {
   z-index: 10;
+  margin: -10px 0 0 -10px;
 }
 .custom-works [class*="work-"]:hover .work-info {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
