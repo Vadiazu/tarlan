@@ -342,18 +342,21 @@ table {
   background: #fff;
   color: #464646;
   padding: 5px 6px;
+  font-weight: normal;
 }
 .custom-works [class*="work-"] .info-work h2 {
   font-size: 16px;
   line-height: 24px;
-  margin: 0 0 10px 0;
+  display: inline;
+  outline: 3px solid #FFF;
+  padding: 3px 0px;
 }
 .custom-works [class*="work-"] .info-work h3 {
   font-size: 12px;
   line-height: 18px;
   padding: 1px 7px;
-  display: inline-block;
-  margin: 0 0 14px 0;
+  display: table;
+  margin: 10px 0 14px 0;
 }
 .custom-works [class*="work-"]:hover {
   z-index: 10;

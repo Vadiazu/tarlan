@@ -26,18 +26,21 @@
                 background: #fff;
                 color: #464646;
                 padding: 5px 6px;
+                font-weight: normal;
             }
 
             h2{
                 @include normal-font(16px, 24px);
-                margin: 0 0 10px 0;
+                display: inline;
+                outline: 3px solid #FFF;
+                padding: 3px 0px;
             }
 
             h3{
                 @include normal-font(12px, 18px);
                 padding: 1px 7px;
-                display: inline-block;
-                margin: 0 0 14px 0;
+                display: table;
+                margin: 10px 0 14px 0;
             }
         }
 
