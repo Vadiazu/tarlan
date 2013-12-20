@@ -5,6 +5,7 @@ http_path = "/"
 css_dir = "css"
 sass_dir = "scss"
 images_dir = "img"
+fonts_dir = "fonts"
 http_generated_images_path = "../img"
 javascripts_dir = "js"
 

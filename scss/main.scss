@@ -5,6 +5,15 @@ $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
 @import "includes";
 
+@include font-face("RobotoBlack", font-files("Roboto-Black-webfont.woff", "Roboto-Black-webfont.ttf", "Roboto-Black-webfont.svg#RobotoBlack"), "Roboto-Black-webfont.eot", normal, normal);
+@include font-face("RobotoBold", font-files("Roboto-Bold-webfont.woff", "Roboto-Bold-webfont.ttf", "Roboto-Bold-webfont.svg#RobotoBold"), "Roboto-Bold-webfont.eot", normal, normal);
+@include font-face("RobotoLight", font-files("Roboto-Light-webfont.woff", "Roboto-Light-webfont.ttf", "Roboto-Light-webfont.svg#RobotoLight"), "Roboto-Light-webfont.eot", normal, normal);
+@include font-face("RobotoThin", font-files("Roboto-Thin-webfont.woff", "Roboto-Thin-webfont.ttf", "Roboto-Thin-webfont.svg#RobotoThin"), "Roboto-Thin-webfont.eot", normal, normal);
+
+$fontRobotoBlack: "RobotoBlack";
+$fontRobotoBold: "RobotoBold";
+$fontRobotoLight: "RobotoLight";
+$fontRobotoThin: "RobotoThin";
 
 a{
   text-decoration: underline;
