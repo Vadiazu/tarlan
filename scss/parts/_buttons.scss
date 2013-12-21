@@ -10,9 +10,14 @@
     background: url("../img/gradient-btn-small.png");
     @include border-radius(28px);
     @include box-sizing(border-box);
-    @include box-shadow(0 3px 7px 1px rgba(0, 0, 0, .75));
+    @include box-shadow(0 3px 7px 1px rgba(0, 0, 0, .3));
     &.large{
-        background: url("../img/gradient-btn.png");
+      background: url("../img/gradient-btn.png");
+      @extend .robotoBlack;
+      height: 50px;
+      line-height: 45px;
+      font-size: 24px;
+      padding: 0 25px;
     }
     &.medium{
         background: url("../img/gradient-btn-medium.png");
