@@ -48,4 +48,24 @@
             text-decoration: none;
         }
     }
+
+    &.arrows{
+        span{
+            position: relative;
+            padding: 0 40px 0 37px;
+
+            &:before, &:after{
+                content: "";
+                position: absolute;
+                @include sprite-image-sprite(blue-arrow-bottom);
+                top: 8px;
+                left: 17px;
+            }
+
+            &:after{
+                left: auto;
+                right: 17px;
+            }
+        }
+    }
 }

@@ -303,7 +303,7 @@ table {
   border-spacing: 0;
 }
 
-.sprite-image-sprite, .feed-unit .feed-img-block .video-play, .main-header .social-icons li a.facebook, .main-header .social-icons li a.vk, .main-header .social-icons li a.youtube, .main-header .about-block, .pagination li .pager-arrow-left, .pagination li .pager-arrow-right, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after, .top-line .search-container .find, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-prev, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-next, .footer .main-footer .main-footer-inner .footer-address .email-icon, .footer .main-footer .main-footer-inner .footer-phones .email-icon, .footer .main-footer .main-footer-inner .footer-phones .phone-icon {
+.sprite-image-sprite, .feed-unit .feed-img-block .video-play, .main-header .social-icons li a.facebook, .main-header .social-icons li a.vk, .main-header .social-icons li a.youtube, .main-header .about-block, .more-btn.arrows span:before, .more-btn.arrows span:after, .pagination li .pager-arrow-left, .pagination li .pager-arrow-right, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after, .top-line .search-container .find, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-prev, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-next, .footer .main-footer .main-footer-inner .footer-address .email-icon, .footer .main-footer .main-footer-inner .footer-phones .email-icon, .footer .main-footer .main-footer-inner .footer-phones .phone-icon {
   background: url('../img/sprite-image.png') no-repeat;
 }
 
@@ -367,7 +367,7 @@ body {
   clear: both;
 }
 
-.list-reset, .pagination, .footer .partners-block .partners-inner .partners-slider, .footer .main-footer .main-footer-inner .footer-menu {
+.list-reset, .pagination, .center .photo-list, .footer .partners-block .partners-inner .partners-slider, .footer .main-footer .main-footer-inner .footer-menu {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -904,6 +904,23 @@ input:focus {
 .more-btn span:hover {
   text-decoration: none;
 }
+.more-btn.arrows span {
+  position: relative;
+  padding: 0 40px 0 37px;
+}
+.more-btn.arrows span:before, .more-btn.arrows span:after {
+  content: "";
+  position: absolute;
+  background-position: 0 -488px;
+  height: 13px;
+  width: 11px;
+  top: 8px;
+  left: 17px;
+}
+.more-btn.arrows span:after {
+  left: auto;
+  right: 17px;
+}
 
 .pagination {
   text-align: center;
@@ -1147,7 +1164,7 @@ input:focus {
   display: block;
   color: #acacac;
   font-style: italic;
-  margin: 0 0 35px 0;
+  margin: 0 0 30px 0;
 }
 .center .page-desc .desc-with-filter .desc-text {
   margin: 0 240px 0 0;
@@ -1233,6 +1250,21 @@ input:focus {
 }
 .center .events-block.actions .events-info a {
   color: #75b3ca;
+}
+.center .photo-list li {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  float: left;
+  margin: 15px;
+}
+.center .photo-list li img {
+  max-width: 100%;
+  height: auto;
+}
+.center .more-btn-block {
+  text-align: center;
+  margin: 40px 0 0 0;
 }
 
 .side-bar {

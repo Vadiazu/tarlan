@@ -23,7 +23,7 @@
             display: block;
             color: #acacac;
             font-style: italic;
-            margin: 0 0 35px 0;
+            margin: 0 0 30px 0;
         }
 
         .desc-with-filter{
@@ -136,5 +136,27 @@
                 }
             }
         }
+    }
+
+    .photo-list{
+        @extend .list-reset;
+
+        li{
+            width: 160px;
+            height: 160px;
+            text-align: center;
+            float: left;
+            margin: 15px;
+
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .more-btn-block{
+        text-align: center;
+        margin: 40px 0 0 0;
     }
 }
