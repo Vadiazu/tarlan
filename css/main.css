@@ -310,7 +310,6 @@ table {
 .custom-works {
   width: 1300px;
   min-height: 400px;
-  border: 1px solid red;
   position: relative;
 }
 .custom-works [class*="work-"] {
@@ -644,7 +643,7 @@ input:focus {
 .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
   content: '';
   position: absolute;
-  background-position: 0 -123px;
+  background-position: 0 -307px;
   height: 14px;
   width: 17px;
   right: -17px;
@@ -728,7 +727,7 @@ input:focus {
 .top-line .search-container .find {
   position: absolute;
   border: none;
-  background-position: 0 -35px;
+  background-position: 0 -219px;
   height: 18px;
   width: 18px;
   right: 3px;
@@ -831,7 +830,6 @@ body {
 .custom-works {
   width: 1300px;
   min-height: 400px;
-  border: 1px solid red;
   position: relative;
 }
 .custom-works [class*="work-"] {
@@ -1165,7 +1163,7 @@ input:focus {
 .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after {
   content: '';
   position: absolute;
-  background-position: 0 -123px;
+  background-position: 0 -307px;
   height: 14px;
   width: 17px;
   right: -17px;
@@ -1249,7 +1247,7 @@ input:focus {
 .top-line .search-container .find {
   position: absolute;
   border: none;
-  background-position: 0 -35px;
+  background-position: 0 -219px;
   height: 18px;
   width: 18px;
   right: 3px;
