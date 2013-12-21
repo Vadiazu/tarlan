@@ -14,11 +14,15 @@ a{
 
 h1, h2, h3, h4, h5, h6{
     display: inline-block;
+    @extend .robotoLight;
+}
+
+h1{
+    @include normal-font(45px, 45px);
 }
 
 h2{
     @include normal-font(32px, 32px);
-    @extend .robotoLight;
     border-bottom: 1px solid #2892BB;
 }
 
