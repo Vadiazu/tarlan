@@ -11,7 +11,6 @@
     @include border-radius(28px);
     @include box-sizing(border-box);
     @include box-shadow(0 3px 7px 1px rgba(0, 0, 0, .75));
-    text-decoration: none;
     &.large{
         background: url("../img/gradient-btn.png");
     }
