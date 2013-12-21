@@ -124,17 +124,105 @@
     }
 
     .main-footer{
-        height: 345px;
+        min-height: 315px;
+        padding: 0 0 30px 0;
         background: #252525;
 
         .main-footer-inner{
-            border: 1px solid red;
 
             .footer-logo{
+                margin: 38px 0 0 50px;
                 width: 77px;
                 height: 85px;
-                display: inline-block;
                 background: url("../img/logo.png") -20px 0 no-repeat;
+            }
+
+            .footer-address{
+                width: 215px;
+                padding: 0 0 0 50px;
+                position: relative;
+                margin: 40px 0 0 55px;
+                color: #fff;
+                @include normal-font(18px, 27px);
+
+                .email-icon{
+                    @include sprite-image-sprite(email-icon);
+                    position: absolute;
+                    left: 0;
+                    top: 10px;
+                }
+
+                .callback-btn{
+                    @include normal-font(12px, 12px);
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+            .footer-phones{
+                @extend .footer-address;
+                @extend .robotoLight;
+                padding: 0 0 0 35px;
+                width: 135px;
+
+                .phone-icon{
+                    @include sprite-image-sprite(phone-icon);
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                }
+
+                strong{
+                    @extend .robotoBold;
+                }
+            }
+
+            .take-part-btn{
+                margin: 46px 55px 0 0;
+            }
+
+            .footer-menu{
+                @extend .list-reset;
+                padding: 20px 0;
+                margin: 40px 0 0 0;
+                border-top: 1px solid #3B3B3B;
+                border-bottom: 1px solid #3B3B3B;
+
+                li{
+                    float: left;
+                    width: 135px;
+                    text-align: center;
+
+                    a{
+                        @include normal-font(12px, 18px);
+                        color: #fff;
+                        font-weight: bold;
+                    }
+
+                    + li{
+                        margin: 0 0 0 9px;
+                    }
+                }
+            }
+
+            .copyright{
+                margin: 25px 0 0 0;
+                color: #898989;
+                font-size: 12px;
+
+                a{
+                    color: #e1e1e1;
+                }
+
+                .copy{
+                    line-height: 18px;
+                    margin: 10px 0 0 0;
+                    width: 325px;
+                }
+            }
+
+            .create-by{
+                @extend .copyright;
             }
         }
     }
