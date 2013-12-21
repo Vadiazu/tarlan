@@ -96,25 +96,26 @@
     </section>
 
     <!--т.к. фон будет разным для разных конкурсов нет смысла выносить его в цсс, чтобы не грузить 2 картинки сразу-->
-    <header class="main-header with-works" style="background: url('img/header-background.jpg') left top no-repeat;">
+    <!--класс with-works добавляем если есть работы высота бакграунда в таком случае 716 пикселей-->
+    <header class="main-header " style="background: url('img/header-background.jpg') left top no-repeat;">
         <div class="header-top-line center-wrapper clear">
             <a class="logo fl-left" href="">
                 <img src="img/logo.png" alt=""/>
             </a>
             <div class="content-wrapper fl-left">
-                <ul class="social-icons fl-right">
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+                <ul class="social-icons list-reset fl-right">
+                    <li><a href="" class="facebook"></a></li>
+                    <li><a href="" class="vk"></a></li>
+                    <li><a href="" class="youtube"></a></li>
                 </ul>
                 <div class="text-wrapper">
                     Дзвоніть нам за ціма телефонами, або скористайтеся <a href="">зворотнім зв’язком</a>:
                 </div>
-                <div class="phone-wrapper">
-                    (096) <span>879-30-26</span>, (044) <span>234-75-38</span>
+                <div class="phone-wrapper robotoLight">
+                    (096) <span class="robotoBold">879-30-26</span><span class="robotoThin">,</span> (044) <span class="robotoBold">234-75-38</span>
                 </div>
-                <div class="menu-wrapper clear">
-                    <ul>
+                <div class="menu-wrapper">
+                    <ul class="list-reset">
                         <li><a href="">Про проект</a></li>
                         <li><a href="">Конкурсні роботи</a></li>
                         <li><a href="">Учасники</a></li>
@@ -130,19 +131,19 @@
             <div class="top-text">
                 тема сезону:
             </div>
-            <div class="conkurs-theme">
+            <div class="conkurs-theme robotoLight">
                 <div>«День Святого Миколая»</div>
                 <div>«Різдво Христове»</div>
             </div>
+            <div class="top-text">до закриття прийому робіт:</div>
             <div class="timer-text">
-                <div class="top-text">до закриття прийому робіт:</div>
                 <span class="number">3</span> місяці <span class="number">2</span> тижні <span class="number">5</span> днів
             </div>
             <a class="dark-button large" href="">
                 Прийняти участь
             </a>
         </div>
-        <section class="custom-works center-margin">
+        <section class="custom-works center-margin" style="display: none;">
             <div class="work-1">
                 <img src="img/temp/work1.jpg" alt=""/>
                 <div class="info-work">
@@ -235,12 +236,11 @@
                 </div>
             </div>
         </section>
-        <section class="about-block center-wrapper">
-            <img class="fl-left" src="img/boy.png" alt=""/>
+        <section class="about-block center-margin">
+            <img class="boy fl-left" src="img/boy.png" alt=""/>
             <p>
-                «Талант.Арт» — проект, який надає прекрасну можливість молодим художникам заявити про свій талант на всю Україну
+                «Талант.Арт» — проект, який надає прекрасну можливість молодим художникам заявити про свій талант на всю Україну <a href="">Дізнатися більше</a>
             </p>
-            <a href="">Дізнатися більше</a>
         </section>
     </header>
 </body>
