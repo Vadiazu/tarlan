@@ -1,0 +1,60 @@
+.center{
+    .page-desc{
+        padding: 0 0 25px 0;
+        border-bottom: 1px solid #EBEBEB;
+        margin: 0 0 50px 0;
+
+        h2{
+            @extend .robotoLight;
+            color: #464646;
+            @include normal-font(45px, 45px);
+            margin: 0 0 40px 0;
+        }
+
+        p{
+            @include normal-font(12px, 18px);
+            color: #9b9b9b;
+            margin: 0;
+        }
+
+        .add-date{
+            display: block;
+            color: #acacac;
+            font-style: italic;
+            margin: 0 0 35px 0;
+        }
+    }
+
+    .council-block{
+        margin: 0 0 0 -20px;
+
+        .council-unit{
+            width: 455px;
+            margin: 0 20px 0 0;
+            position: relative;
+
+            .council-img{
+                width: 265px;
+            }
+
+            .council-details{
+                position: absolute;
+                bottom: 40px;
+                left: 265px;
+
+                h3{
+                    @extend .robotoLight;
+                    color: #898989;
+                    @include normal-font(24px, 27px);
+                    margin: 0 0 20px 0;
+                }
+
+                p{
+                    color: #898989;
+                    @include normal-font(14px, 18px);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

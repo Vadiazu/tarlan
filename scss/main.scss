@@ -3,7 +3,6 @@
 @import "customMixins";
 $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
-@import "includes";
 
 a{
   text-decoration: underline;
@@ -23,7 +22,6 @@ h1{
 
 h2{
     @include normal-font(32px, 32px);
-    border-bottom: 1px solid #2892BB;
 }
 
 body{
@@ -68,13 +66,25 @@ body{
 .robotoBlack{
   font-family: "robotoblack";
 }
+
 .robotoThin{
   font-family: "robotothin";
 }
+
 .robotoLight{
   font-family: "robotolight";
 }
+
 .robotoBold{
   font-family: "robotobold";
 }
+
+.bordered-title{
+    border-bottom: 1px solid #2892BB;
+}
+
+.container{
+    margin-top: 65px;
+}
+
 @import "includes";
