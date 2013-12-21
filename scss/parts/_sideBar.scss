@@ -1,0 +1,35 @@
+.side-bar{
+    width: 170px;
+    margin: 0 20px 0 0;
+
+    + .center{
+        margin-right: 300px;
+        overflow: hidden;
+    }
+
+    h3{
+        margin: 0 0 30px 0;
+    }
+
+    .feed-unit{
+        .feed-unit-details{
+            margin: 14px 0 0 0;
+
+            .date{
+                color: #acacac;
+            }
+
+            a{
+                color: #2e87a9;
+            }
+        }
+
+        + .feed-unit{
+            margin: 35px 0 0 0;
+        }
+    }
+
+    .more-btn{
+        margin: 35px 20px 0 0;
+    }
+}

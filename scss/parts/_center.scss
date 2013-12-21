@@ -1,4 +1,6 @@
 .center{
+    padding: 0 0 60px 0;
+
     .page-desc{
         padding: 0 0 25px 0;
         border-bottom: 1px solid #EBEBEB;
@@ -11,7 +13,7 @@
             margin: 0 0 40px 0;
         }
 
-        p{
+        .desc-text{
             @include normal-font(12px, 18px);
             color: #9b9b9b;
             margin: 0;
@@ -23,14 +25,24 @@
             font-style: italic;
             margin: 0 0 35px 0;
         }
+
+        .desc-with-filter{
+            .desc-text{
+                margin: 0 240px 0 0;
+            }
+
+            .filter-dropdown{
+                width: 230px;
+            }
+        }
     }
 
     .council-block{
         margin: 0 0 0 -20px;
 
         .council-unit{
-            width: 455px;
-            margin: 0 20px 0 0;
+            width: 470px;
+            margin: 0 20px 40px 0;
             position: relative;
 
             .council-img{
@@ -47,12 +59,80 @@
                     color: #898989;
                     @include normal-font(24px, 27px);
                     margin: 0 0 20px 0;
+                    width: 150px;
                 }
 
                 p{
                     color: #898989;
                     @include normal-font(14px, 18px);
                     margin: 0;
+                }
+            }
+        }
+    }
+
+    .events-block{
+
+        + .events-block{
+            margin: 60px 0 0 0;
+        }
+
+        h3{
+            margin: 0 0 30px 0;
+        }
+
+        .events-unit{
+            padding-bottom: 15px;
+            border-bottom: 1px solid #EBEBEB;
+
+            + .events-unit{
+                padding-top: 19px;
+            }
+
+            .events-img{
+                width: 145px;
+                margin: 0 15px 0 0;
+
+                a{
+                    display: block;
+                }
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                    border: 1px solid #d7d7d7;
+                }
+            }
+
+            .events-info{
+                overflow: hidden;
+
+                .date{
+                    display: block;
+                    color: #acacac;
+                    @extend .robotoLight;
+                    @include normal-font(18px, 18px);
+                    margin: 0 0 10px 0;
+                }
+
+                a{
+                    color: #2e87a9;
+                    font-weight: bold;
+                    @include normal-font(14px, 14px);
+                }
+
+                p{
+                    color: #636363;
+                    @include normal-font(12px, 18px);
+                    margin: 5px 0;
+                }
+            }
+        }
+
+        &.actions{
+            .events-info{
+                a{
+                    color: #75b3ca;
                 }
             }
         }
