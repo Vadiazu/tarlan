@@ -120,16 +120,16 @@
       }
     }
   }
-//  &:after{
-//    content: '';
-//    position: absolute;
-//    background: url("../img/after-header-bg.jpg");
-//    height: 666px;
-//    width: 885px;
-//    z-index: 0;
-//    margin-left: -50px;
-//    left: 50%;
-//  }
+  &:after{
+    content: '';
+    position: absolute;
+    background: url("../img/after-header-bg.jpg");
+    height: 666px;
+    width: 885px;
+    z-index: 0;
+    margin-left: -50px;
+    left: 50%;
+  }
   &.with-works{
     .header-invite{
       margin-bottom: 76px;
