@@ -24,6 +24,18 @@
                 margin: 37px 0 0 0;
                 position: relative;
 
+                .feed-unit-details{
+                    margin: 25px 0 0 0;
+
+                    .date{
+                        color: #fff;
+                    }
+
+                    a{
+                        color: #52d9f1;
+                    }
+                }
+
                 .bx-prev, .bx-next{
                     position: absolute;
                     top: -40px;

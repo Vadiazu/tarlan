@@ -390,7 +390,18 @@ body {
 }
 
 .bordered-title {
+  display: block;
+}
+.bordered-title a {
   border-bottom: 1px solid #2892BB;
+  color: #464646;
+  font-size: 32px;
+  line-height: 32px;
+  text-decoration: none;
+  display: inline-block;
+}
+.bordered-title a:hover {
+  border-color: transparent;
 }
 
 .container {
@@ -399,6 +410,9 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.container > h2 {
+  color: #464646;
 }
 
 .page-title {
@@ -410,12 +424,13 @@ body {
 
 .feed-unit .feed-img-block {
   position: relative;
+  display: inline-block;
 }
 .feed-unit .feed-img-block a {
   display: block;
 }
 .feed-unit .feed-img-block img {
-  border: 1px solid #d7d7d7;
+  border: 1px solid #fff;
   vertical-align: middle;
 }
 .feed-unit .feed-img-block .video-play {
@@ -430,17 +445,17 @@ body {
   margin: auto;
 }
 .feed-unit .feed-unit-details {
-  margin: 25px 0 0 0;
+  margin: 14px 0 0 0;
 }
 .feed-unit .feed-unit-details .date {
-  color: #fff;
+  color: #ACACAC;
   font-size: 10px;
   line-height: 10px;
   display: block;
   min-height: 13px;
 }
 .feed-unit .feed-unit-details a {
-  color: #52d9f1;
+  color: #2E87A9;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1266,6 +1281,17 @@ input:focus {
   text-align: center;
   margin: 40px 0 0 0;
 }
+.center .photo-side, .center .video-side {
+  width: 460px;
+}
+.center .photo-side h3, .center .video-side h3 {
+  margin: 0 0 40px 0;
+}
+.center .photo-side .feed-unit, .center .video-side .feed-unit {
+  margin: 0 60px 60px 0;
+  width: 172px;
+  float: left;
+}
 
 .side-bar {
   width: 170px;
@@ -1318,6 +1344,15 @@ input:focus {
 .footer .photo-video-files .photo-video-inner .photo-video-slider {
   margin: 37px 0 0 0;
   position: relative;
+}
+.footer .photo-video-files .photo-video-inner .photo-video-slider .feed-unit-details {
+  margin: 25px 0 0 0;
+}
+.footer .photo-video-files .photo-video-inner .photo-video-slider .feed-unit-details .date {
+  color: #fff;
+}
+.footer .photo-video-files .photo-video-inner .photo-video-slider .feed-unit-details a {
+  color: #52d9f1;
 }
 .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-prev, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-next {
   position: absolute;

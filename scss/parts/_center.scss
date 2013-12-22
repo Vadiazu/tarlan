@@ -159,4 +159,18 @@
         text-align: center;
         margin: 40px 0 0 0;
     }
+
+    .photo-side, .video-side{
+        width: 460px;
+
+        h3{
+            margin: 0 0 40px 0;
+        }
+
+        .feed-unit{
+            margin: 0 60px 60px 0;
+            width: 172px;
+            float: left;
+        }
+    }
 }
