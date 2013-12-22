@@ -37,4 +37,8 @@ $(document).ready(function(){
         controls: true
     });
 
+    //fancybox in photo list
+
+    $(".photo-list li a").fancybox();
+
 });
