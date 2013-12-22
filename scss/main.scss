@@ -12,8 +12,9 @@ a{
 }
 
 h1, h2, h3, h4, h5, h6{
-    display: inline-block;
     @extend .robotoLight;
+    color: #464646;
+    margin: 10px 0 15px 0;
 }
 
 h1{
@@ -21,12 +22,11 @@ h1{
 }
 
 h2{
-    @include normal-font(32px, 32px);
+    @include normal-font(24px, 24px);
 }
 
 h3{
-    color: #464646;
-    @include normal-font(24px, 24px);
+    @include normal-font(18px,18px);
     @extend .robotoLight;
 }
 
@@ -70,6 +70,10 @@ body{
   list-style: none;
 }
 
+.centered{
+    text-align: center;
+}
+
 .robotoBlack{
   font-family: "robotoblack";
 }
@@ -102,12 +106,23 @@ body{
     }
 }
 
+.red-marker{
+    list-style: none;
+
+    li{
+        @include normal-font(13px, 27px);
+        padding: 0 0 0 22px;
+        background: url("../img/sprite-image/red-marker.png") left 6px no-repeat;
+    }
+}
+
 .container{
     margin-top: 65px;
     padding: 0 20px;
     @include box-sizing(border-box);
     position: relative;
     z-index: 1;
+
     > h2{
         color: #464646;
     }
@@ -183,6 +198,20 @@ body{
             padding: 0 0 4px 4px;
             background: url("../img/photo-slider-frame.png") left bottom no-repeat;
         }
+    }
+}
+
+figure{
+    padding: 15px 0;
+    border-top: 1px solid #EBEBEB;
+    border-bottom: 1px solid #EBEBEB;
+    text-align: center;
+
+    figcaption{
+        color: #636363;
+        @include normal-font(13px, 13px);
+        font-style: italic;
+        margin: 10px 0 0 0;
     }
 }
 

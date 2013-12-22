@@ -25,4 +25,16 @@ $(document).ready(function(){
         controls: false
     });
 
+    $(".custom-carousel-list").bxSlider({
+        auto: true,
+        pause: 10000,
+        slideWidth: 110,
+        slideMargin: 15,
+        minSlides: 5,
+        maxSlides: 5,
+        moveSlides: 1,
+        pager: false,
+        controls: true
+    });
+
 });
