@@ -1,6 +1,5 @@
 .main-header{
   position: relative;
-  margin-bottom: 135px;
   .header-top-line{
     color: #ffffff;
     padding-top: 15px;
@@ -121,15 +120,18 @@
       }
     }
   }
-  &.home-header:after{
-    content: '';
-    position: absolute;
-    background: url("../img/after-header-bg.jpg");
-    height: 666px;
-    width: 885px;
-    z-index: 0;
-    margin-left: -50px;
-    left: 50%;
+  &.home-header{
+    margin-bottom: 135px;
+    &:after{
+      content: '';
+      position: absolute;
+      background: url("../img/after-header-bg.jpg");
+      height: 666px;
+      width: 885px;
+      z-index: 0;
+      margin-left: -50px;
+      left: 50%;
+    }
   }
   &.with-works{
     margin-bottom: 80px;
