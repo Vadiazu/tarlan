@@ -119,6 +119,11 @@
                     color: #2e87a9;
                     font-weight: bold;
                     @include normal-font(14px, 14px);
+                    + .date{
+                      display: inline;
+                      font-size: 10px;
+                      margin-left: 7px;
+                    }
                 }
 
                 p{
@@ -144,6 +149,10 @@
                     color: #75b3ca;
                 }
             }
+        }
+
+        .more-btn{
+          margin-top: 20px;
         }
     }
 

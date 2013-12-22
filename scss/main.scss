@@ -91,6 +91,8 @@ body{
 }
 
 .bordered-title{
+    display: block;
+    
     a{
         border-bottom: 1px solid #2892BB;
         color: #464646;
@@ -118,6 +120,8 @@ body{
     margin-top: 65px;
     padding: 0 20px;
     @include box-sizing(border-box);
+    position: relative;
+    z-index: 1;
 
     > h2{
         color: #464646;
@@ -134,17 +138,17 @@ body{
 
 .feed-unit{
     a{
-        color: #2E87A9;
-        @include normal-font(12px, 18px);
+      display: block;
+      color: #2E87A9;
+      @include normal-font(12px, 18px);
+      text-decoration: none;
+      &:hover .feed-name{
         text-decoration: none;
-        display: block;
-        &:hover .feed-name{
-            text-decoration: none;
-        }
+      }
     }
 
     .feed-name{
-        text-decoration: underline;
+      text-decoration: underline;
     }
 
     .feed-img-block{
