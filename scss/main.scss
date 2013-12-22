@@ -121,6 +121,19 @@ body{
 
 
 .feed-unit{
+    a{
+      color: #2E87A9;
+      @include normal-font(12px, 18px);
+      text-decoration: none;
+      &:hover .feed-name{
+        text-decoration: none;
+      }
+    }
+
+    .feed-name{
+      text-decoration: underline;
+    }
+
     .feed-img-block{
         position: relative;
         display: inline-block;
@@ -153,11 +166,6 @@ body{
             @include normal-font(10px, 10px);
             display: block;
             min-height: 13px;
-        }
-
-        a{
-            color: #2E87A9;
-            @include normal-font(12px, 18px);
         }
 
         .count{

@@ -120,7 +120,7 @@
       }
     }
   }
-  &:after{
+  &.home-header:after{
     content: '';
     position: absolute;
     background: url("../img/after-header-bg.jpg");
