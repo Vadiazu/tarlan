@@ -948,6 +948,20 @@ input:focus {
   height: 43px;
   padding: 0 25px;
 }
+.dark-button.colored {
+  height: 46px;
+  background-color: #00c1b3;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00C1B3', endColorstr='#FF0086A8');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00c1b3), color-stop(28%, #00b9ac), color-stop(100%, #0086a8));
+  background-image: -webkit-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: -moz-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: -o-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  padding: 0 23px;
+  font-size: 24px;
+  line-height: 39px;
+}
 
 .more-btn {
   display: inline-block;
@@ -1392,6 +1406,9 @@ input:focus {
 }
 .center .custom-carousel-block .custom-carousel .custom-carousel-list li a {
   display: block;
+}
+.center .participate-btn {
+  margin: 35px 0 0 0;
 }
 
 .side-bar {

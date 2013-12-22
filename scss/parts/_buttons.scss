@@ -27,6 +27,15 @@
         height: 43px;
         padding: 0 25px;
     }
+
+    &.colored{
+        height: 46px;
+        background-color: #00c1b3;
+        @include filter-gradient(#00c1b3, #0086a8, vertical);
+        @include background-image(linear-gradient(top,  #00c1b3 0%,#00b9ac 28%,#0086a8 100%));
+        padding: 0 23px;
+        @include normal-font(24px, 39px);
+    }
 }
 
 .more-btn{
