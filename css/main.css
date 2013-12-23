@@ -318,6 +318,7 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   color: #464646;
   margin: 10px 0 15px 0;
+  font-weight: normal;
 }
 
 h1 {
@@ -333,6 +334,10 @@ h2 {
 h3 {
   font-size: 18px;
   line-height: 18px;
+}
+
+img {
+  display: block;
 }
 
 body {
@@ -382,7 +387,7 @@ body {
   font-family: "robotoblack";
 }
 
-.robotoThin, .plener-text {
+.robotoThin, .center .plener-text {
   font-family: "robotothin";
 }
 
@@ -510,7 +515,7 @@ figure figcaption {
   margin: 10px 0 0 0;
 }
 
-.custom-label {
+.center .custom-label {
   background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -518,6 +523,7 @@ figure figcaption {
   position: relative;
   min-height: 95px;
   line-height: 95px;
+  margin: 40px 0;
   -webkit-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
   -moz-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
   -ms-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
@@ -527,28 +533,54 @@ figure figcaption {
   -moz-box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
 }
-.custom-label .text-wrapper {
+.center .custom-label .text-wrapper {
   display: inline-block;
   text-align: left;
   vertical-align: middle;
   line-height: normal;
 }
-.custom-label.promo {
-  padding: 10px 57px;
+.center .custom-label.promo {
+  padding: 0px 57px;
 }
-.custom-label.plener {
+.center .custom-label.plener {
+  margin-top: 65px;
   font-size: 14px;
   color: #464646;
 }
-
-.page-desc.plener-intro {
-  border: none;
+.center .custom-label.plener .plener-image {
+  bottom: 0;
+  left: 55px;
+  position: absolute;
+  line-height: normal;
 }
-
-.plener-text {
+.center .custom-label.plener .plener-desc {
+  margin: 0 50px 0 195px;
+  line-height: 18px;
+  color: #464646;
+}
+.center .page-desc.plener-intro {
+  border-bottom: none;
+  padding: 0;
+}
+.center .plener-text {
   font-size: 18px;
   line-height: 27px;
   color: #636363;
+}
+.center .plener-columns {
+  color: #636363;
+  line-height: 18px;
+  margin-bottom: 70px;
+}
+.center .plener-columns > div {
+  width: 450px;
+}
+.center .latest-pleners h2 {
+  margin: 0 0 5px;
+}
+.center .latest-pleners .events-info {
+  margin-right: 100px;
+  width: 220px;
 }
 
 .main-header {
@@ -1460,6 +1492,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .center .participate-btn {
   margin: 35px 0 0 0;
 }
+.center .video-container {
+  padding: 60px 0 45px;
+  width: 660px;
+}
 
 .events-block + .events-block {
   margin: 60px 0 0 0;
@@ -1719,6 +1755,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   border-radius: 10px 10px 10px 10px/40px 40px 40px 40px;
   height: 108px;
   width: 130px;
+  -webkit-box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
 }
 .members-events .participant-container .participant .name {
   color: #2e87a9;
