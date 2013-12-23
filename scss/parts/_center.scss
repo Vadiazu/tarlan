@@ -322,6 +322,7 @@
         }
 
         .promo-code-desc{
+            padding: 0 0 0 32px;
             overflow: hidden;
             color: #9b9b9b;
             @include normal-font(14px, 18px);
@@ -330,5 +331,13 @@
                 color: #464646;
             }
         }
+    }
+
+    .profile-text{
+        margin: 45px 0 0 0;
+        color: #9b9b9b;
+        font-size: 13px;
+        border-bottom: 1px solid #EBEBEB;
+        padding: 0 0 5px 0;
     }
 }

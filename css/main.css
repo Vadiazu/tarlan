@@ -1520,6 +1520,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   display: block;
 }
 .edit-profile .custom-label .promo-code-desc {
+  padding: 0 0 0 32px;
   overflow: hidden;
   color: #9b9b9b;
   font-size: 14px;
@@ -1527,6 +1528,13 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 .edit-profile .custom-label .promo-code-desc strong {
   color: #464646;
+}
+.edit-profile .profile-text {
+  margin: 45px 0 0 0;
+  color: #9b9b9b;
+  font-size: 13px;
+  border-bottom: 1px solid #EBEBEB;
+  padding: 0 0 5px 0;
 }
 
 .side-bar {
