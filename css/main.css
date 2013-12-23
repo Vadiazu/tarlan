@@ -303,12 +303,13 @@ table {
   border-spacing: 0;
 }
 
-.sprite-image-sprite, .feed-unit .feed-img-block .video-play, .custom-label, .main-header .social-icons li a.facebook, .main-header .social-icons li a.vk, .main-header .social-icons li a.youtube, .main-header .about-block, .more-btn.arrows span:before, .more-btn.arrows span:after, .pagination li .pager-arrow-left, .pagination li .pager-arrow-right, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after, .top-line .search-container .find, .center .custom-carousel-block .custom-carousel .bx-prev, .center .custom-carousel-block .custom-carousel .bx-next, .members-events .events-block:before, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-prev, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-next, .footer .main-footer .main-footer-inner .footer-address .email-icon, .footer .main-footer .main-footer-inner .footer-phones .email-icon, .footer .main-footer .main-footer-inner .footer-phones .phone-icon {
+.sprite-image-sprite, .feed-unit .feed-img-block .video-play, .main-header .social-icons li a.facebook, .main-header .social-icons li a.vk, .main-header .social-icons li a.youtube, .main-header .about-block, .more-btn.arrows span:before, .more-btn.arrows span:after, .pagination li .pager-arrow-left, .pagination li .pager-arrow-right, .top-line .other-projects .drop-down-holder > span:after, .top-line .site-language .drop-down-holder > span:after, .top-line .search-container .find, .center .custom-carousel-block .custom-carousel .bx-prev, .center .custom-carousel-block .custom-carousel .bx-next, .members-events .events-block:before, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-prev, .footer .photo-video-files .photo-video-inner .photo-video-slider .bx-next, .footer .main-footer .main-footer-inner .footer-address .email-icon, .footer .main-footer .main-footer-inner .footer-phones .email-icon, .footer .main-footer .main-footer-inner .footer-phones .phone-icon {
   background: url('../img/sprite-image.png') no-repeat;
 }
 
 a {
   text-decoration: underline;
+  color: #2e87a9;
 }
 a:hover {
   text-decoration: none;
@@ -381,7 +382,7 @@ body {
   font-family: "robotoblack";
 }
 
-.robotoThin {
+.robotoThin, .plener-text {
   font-family: "robotothin";
 }
 
@@ -510,12 +511,34 @@ figure figcaption {
 }
 
 .custom-label {
-  background-position: 0 -396px;
-  height: 145px;
-  width: 1000px;
+  background: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
+  min-height: 95px;
+  -webkit-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
+  -moz-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
+  -ms-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
+  -o-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
+  border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
+  -webkit-box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
+}
+.custom-label.plener {
+  font-size: 14px;
+  color: #464646;
+}
+
+.page-desc.plener-intro {
+  border: none;
+}
+
+.plener-text {
+  font-size: 18px;
+  line-height: 27px;
+  color: #636363;
 }
 
 .main-header {
