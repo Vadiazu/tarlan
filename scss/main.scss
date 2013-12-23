@@ -16,6 +16,7 @@ h1, h2, h3, h4, h5, h6{
     @extend .robotoLight;
     color: #464646;
     margin: 10px 0 15px 0;
+    font-weight: normal;
 }
 
 h1{
@@ -29,6 +30,10 @@ h2{
 h3{
     @include normal-font(18px,18px);
     @extend .robotoLight;
+}
+
+img{
+  display: block;
 }
 
 body{
@@ -216,38 +221,72 @@ figure{
     }
 }
 
-.custom-label{
-    background: #fff;
-    @include box-sizing(border-box);
-    position: relative;
-    min-height: 95px;
-    line-height: 95px;
-    @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
-    @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
-    .text-wrapper{
-      display: inline-block;
-      text-align: left;
-      vertical-align: middle;
-      line-height: normal;
-    }
-    &.promo{
-      padding: 10px 57px;
-    }
-    &.plener{
-      font-size: 14px;
-      color: #464646;
-    }
-}
+.center{
+  .custom-label{
+      background: #fff;
+      @include box-sizing(border-box);
+      position: relative;
+      min-height: 95px;
+      line-height: 95px;
+      margin: 40px 0;
+      @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
+      @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
+      .text-wrapper{
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        line-height: normal;
+      }
+      &.promo{
+        padding: 0px 57px;
+      }
+      &.plener{
+        margin-top: 65px;
+        font-size: 14px;
+        color: #464646;
+        .plener-image{
+          bottom: 0;
+          left: 55px;
+          position: absolute;
+          line-height: normal;
+        }
+        .plener-desc{
+          margin: 0 50px 0 195px;
+          line-height: 18px;
+          color: #464646;
+        }
+      }
+  }
 
-.page-desc.plener-intro{
-  border: none;
-}
+  .page-desc.plener-intro{
+    border-bottom: none;
+    padding: 0;
+  }
 
-.plener-text{
-  @extend .robotoThin;
-  font-size: 18px;
-  line-height: 27px;
-  color: #636363;
-}
+  .plener-text{
+    @extend .robotoThin;
+    font-size: 18px;
+    line-height: 27px;
+    color: #636363;
+  }
 
+  .plener-columns{
+    color: #636363;
+    line-height: 18px;
+    margin-bottom: 70px;
+    > div{
+      width: 450px;
+    }
+  }
+
+  .latest-pleners{
+    h2{
+      margin: 0 0 5px;
+    }
+    .events-info{
+      margin-right: 100px;
+      width: 220px;
+    }
+  }
+}
 @import "includes";
