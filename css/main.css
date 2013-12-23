@@ -575,12 +575,23 @@ figure figcaption {
 .center .plener-columns > div {
   width: 450px;
 }
+.center .latest-pleners {
+  margin-right: -100px;
+}
 .center .latest-pleners h2 {
   margin: 0 0 5px;
 }
-.center .latest-pleners .events-info {
+.center .latest-pleners .events-unit {
+  padding-top: 14px;
+  border: none;
+}
+.center .latest-pleners .events-unit .events-info {
   margin-right: 100px;
   width: 220px;
+}
+.center .latest-pleners .events-unit .events-info .date {
+  font-size: 10px;
+  margin-bottom: 5px;
 }
 
 .main-header {

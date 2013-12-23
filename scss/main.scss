@@ -280,12 +280,21 @@ figure{
   }
 
   .latest-pleners{
+    margin-right: -100px;
     h2{
       margin: 0 0 5px;
     }
-    .events-info{
-      margin-right: 100px;
-      width: 220px;
+    .events-unit{
+      padding-top: 14px;
+      border: none;
+      .events-info{
+        margin-right: 100px;
+        width: 220px;
+        .date{
+          font-size: 10px;
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }
