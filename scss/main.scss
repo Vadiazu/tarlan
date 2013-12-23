@@ -6,8 +6,7 @@ $sprite-image-sprite-dimensions: true;
 
 a{
   text-decoration: underline;
-    color: #2e87a9;
-
+  color: #2e87a9;
   &:hover{
     text-decoration: none;
   }
@@ -218,9 +217,27 @@ figure{
 }
 
 .custom-label{
-    @include sprite-image-sprite(custom-label-bg);
+    background: #fff;
     @include box-sizing(border-box);
+    position: relative;
+    min-height: 95px;
+    @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
+    @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
+    &.plener{
+      font-size: 14px;
+      color: #464646;
+    }
 }
 
+.page-desc.plener-intro{
+  border: none;
+}
+
+.plener-text{
+  @extend .robotoThin;
+  font-size: 18px;
+  line-height: 27px;
+  color: #636363;
+}
 
 @import "includes";

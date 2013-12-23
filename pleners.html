@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Tarlan</title>
 
+        <link type="text/css" rel="stylesheet" href="js/fancy/jquery.fancybox.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="font/stylesheet.css">
 
@@ -17,6 +18,7 @@
         <script src="js/jquery.customSelect.min.js"></script>
 
         <script src="js/slider/jquery.bxslider.min.js"></script>
+        <script src="js/fancy/jquery.fancybox.pack.js"></script>
 
         <!--[if lte IE 9]>
             <script type="text/javascript" src="js/html5shiv.js"></script>
@@ -131,86 +133,58 @@
 
 <section class="container center-margin center-wrapper">
     <div class="center">
-        <div class="edit-profile">
-            <div class="page-desc">
-                <h2>Редагування профайлу</h2>
-                <div class="desc-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
-                    рыбные тексты. Вдали от всех живут они в буквенных домах на берегу
-                    Семантика большого языкового океана. Маленький ручеек Даль журчит по всей
-                    стране и обеспечивает ее всеми необходимыми правилами. </div>
+        <div class="page-desc plener-intro">
+            <h2>Пленери</h2>
+            <div class="plener-text">Выготский разработал, ориентируясь на методологию марксизма,
+                учение которое утверждает что, коллективное бессознательное мгновенно вызывает потребительский гендер,
+                как и предсказывает теория о бесполезном знании. Психическая саморегуляция текстологически иллюстрирует
+                социальный интеракционизм, к тому же этот вопрос касается чего-то слишком общего. </div>
+        </div>
+        <div class="custom-label plener">
+            <div class="plener-image fl-left">
+                <img src="img/plener.png" alt=""/>
             </div>
-            <div class="custom-label promo">
-                <div class="text-wrapper">
-                    <div class="promo-code fl-left">
-                        Ваш код учасника:
-                        <span class="code">72btj57t</span>
-                    </div>
-                    <div class="promo-code-desc">
-                        <strong>Код учасника</strong> – це магічне єднання художника з природою.
-                        Це особливий вид мистецтва, коли натхнення від осягнутих
-                        зором краєвидів знаходять своє миттєве відображення на полотні,
-                        передаючи неповторний дух місцевості та її сприйняття художником.
-                    </div>
+            <div class="plener-desc">
+                <strong>Пленер (plein air)</strong> – це магічне єднання художника з природою.
+                Це особливий вид мистецтва, коли натхнення від осягнутих зором краєвидів знаходять
+                своє миттєве відображення на полотні, передаючи неповторний дух місцевості та її сприйняття художником.
+            </div>
+        </div>
+        <div class="plener-columns clear">
+            <div class="fl-right">
+                Представлений контент - аналіз є психолингвистическим в своїй основі, таким чином страх нестійкий прояснює девіантною суб'єкт,
+                і це не дивно, якщо мова про персоніфікований характер первинної соціалізації. Психоз помітно відчужує комплекс, отже основний
+                закон психофізики: відчуття змінюється пропорційно логарифму подразника. Подружжя вступають у шлюб з життєвими патернами
+                і рівнями диференціації Я, успадкованими від їх батьківських сімей, таким чином контраст починає автоматизм, отже основний закон психофізики: відчуття змінюється
+            </div>
+            <div class="fl-left">
+                Стрес вибирає культурний комплекс в силу якого змішує суб'єктивне та об'єктивне, переносить свої
+                внутрішні спонукання на реальні зв'язку речей. Предсознательное, згідно з традиційними уявленнями,
+                дає филосовский психоаналіз в силу якого змішує суб'єктивне та об'єктивне, переносить свої внутрішні
+                спонукання на реальні зв'язку речей. Роль, як прийнято вважати, точно представляє собою суб'єкт, тут
+                описується централізує процес або створення нового центру особистості. Несвідоме притягує ассоціанізм,
+                таким чином здійснюється свого роду зв'язок з темнотою несвідомого.
+            </div>
+        </div>
+        <div class="events-block latest-pleners">
+            <div class="events-unit clear">
+                <div class="events-info fl-left">
+                    <span class="date"> 30 вересня 2013</span>
+                    <a href="javascript:void(0);">Оголошуємо старт «Фестивалю Святого Миколая 2013 року»!</a>
+                </div>
+                <div class="events-info fl-left">
+                    <span class="date"> 30 вересня 2013</span>
+                    <a href="javascript:void(0);">Оголошуємо старт «Фестивалю Святого Миколая 2013 року»!</a>
+                </div>
+                <div class="events-info fl-left">
+                    <span class="date"> 30 вересня 2013</span>
+                    <a href="javascript:void(0);">Оголошуємо старт «Фестивалю Святого Миколая 2013 року»!</a>
+                </div>
+                <div class="events-info fl-left">
+                    <span class="date"> 30 вересня 2013</span>
+                    <a href="javascript:void(0);">Оголошуємо старт «Фестивалю Святого Миколая 2013 року»!</a>
                 </div>
             </div>
-            <form action="#">
-                <table class="table-profile-table">
-                    <tr>
-                        <td>E-mail</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>ПІБ</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Ваші повні презвище, ім;я, та по-батькові</span></td>
-                    </tr>
-                    <tr>
-                        <td>Дата народження</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span>число / місяць / рік</span></td>
-                    </tr>
-                    <tr>
-                        <td>Фтографія</td>
-                        <td><input type="file"/> <span>Учасники з фторафіями з’являться на головній сторінці сайту</span></td>
-                    </tr>
-                    <tr>
-                        <td>Трохи про себе</td>
-                        <td><textarea class="medium-textarea"></textarea></td>
-                    </tr>
-                </table>
-                <div class="profile-text">Контактні дані (окрім міста проживання доступні тільки адміністраторам сайту)</div>
-                <table class="table-profile-table">
-                    <tr>
-                        <td>Індекс</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>Область</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Район</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Місто/Село</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Вулиця</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Будинок</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Квартира</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                </table>
-                <div class="submit-btn-block">
-                    <button type="submit" class="custom-btn">Зберегти зміни</button>
-                </div>
-            </form>
         </div>
     </div>
 </section>
