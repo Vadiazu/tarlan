@@ -39,6 +39,6 @@ $(document).ready(function(){
 
     //fancybox in photo list
 
-    $(".photo-list li a").fancybox();
+    $(".photo-list .photo-list-unit a").fancybox();
 
 });
