@@ -271,14 +271,14 @@
 
 .edit-profile{
     .table-profile-table{
-        input[type="text"]{
+        label{
             position: relative;
 
             &:before{
                 content: "*";
                 position: absolute;
-                right: 0px;
-                top: 0px;
+                right: -2px;
+                top: -15px;
                 color: #ed1c24;
                 font-size: 28px;
                 @extend .robotoBlack;
@@ -290,11 +290,19 @@
                 padding: 15px 20px;
 
                 &:first-child{
+                    padding-right: 0;
                     width: 220px;
                     text-align: right;
                     color: #464646;
                     @include normal-font(18px, 18px);
                     @extend .robotoLight;
+                }
+
+                span{
+                    color: #9b9b9b;
+                    font-size: 13px;
+                    display: inline-block;
+                    margin: 0 0 0 15px;
                 }
             }
         }
@@ -339,5 +347,15 @@
         font-size: 13px;
         border-bottom: 1px solid #EBEBEB;
         padding: 0 0 5px 0;
+    }
+
+    .submit-btn-block{
+        margin: 25px 0 0 0;
+        padding: 35px 0 0 0;
+        border-top: 1px solid #EBEBEB;
+
+        .custom-btn{
+            margin: 0 0 0 262px;
+        }
     }
 }

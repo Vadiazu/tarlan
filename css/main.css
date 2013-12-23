@@ -377,7 +377,7 @@ body {
   text-align: center;
 }
 
-.robotoBlack, .dark-button.large, .center .custom-carousel-block h3, .edit-profile .table-profile-table input[type="text"]:before {
+.robotoBlack, .dark-button.large, .custom-btn, .center .custom-carousel-block h3, .edit-profile .table-profile-table label:before {
   font-family: "robotoblack";
 }
 
@@ -907,12 +907,14 @@ input:focus {
 }
 
 .dark-input {
-  border: none;
+  border: none !important;
   background: #464646;
-  color: #ffffff;
+  color: white !important;
   font-size: 12px;
   line-height: normal;
-  padding: 5px 7px;
+  padding: 5px 7px !important;
+  height: auto !important;
+  border-radius: 0 !important;
 }
 
 .placeholder-container {
@@ -1042,6 +1044,29 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .more-btn.arrows span:after {
   left: auto;
   right: 17px;
+}
+
+.custom-btn {
+  display: inline-block;
+  outline: none;
+  background-color: #00c1b3;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF00C1B3', endColorstr='#FF0086A8');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00c1b3), color-stop(28%, #00b9ac), color-stop(100%, #0086a8));
+  background-image: -webkit-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: -moz-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: -o-linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  background-image: linear-gradient(top, #00c1b3 0%, #00b9ac 28%, #0086a8 100%);
+  -webkit-box-shadow: inset 0 1px 0 #a4f5ff;
+  -moz-box-shadow: inset 0 1px 0 #a4f5ff;
+  box-shadow: inset 0 1px 0 #a4f5ff;
+  color: #fff;
+  height: 37px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 4px 4px 4px 4px/20px 20px 20px 20px;
+  font-size: 18px;
+  line-height: 19px;
 }
 
 .pagination {
@@ -1479,14 +1504,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   vertical-align: middle;
 }
 
-.edit-profile .table-profile-table input[type="text"] {
+.edit-profile .table-profile-table label {
   position: relative;
 }
-.edit-profile .table-profile-table input[type="text"]:before {
+.edit-profile .table-profile-table label:before {
   content: "*";
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: -2px;
+  top: -15px;
   color: #ed1c24;
   font-size: 28px;
 }
@@ -1494,11 +1519,18 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   padding: 15px 20px;
 }
 .edit-profile .table-profile-table tr td:first-child {
+  padding-right: 0;
   width: 220px;
   text-align: right;
   color: #464646;
   font-size: 18px;
   line-height: 18px;
+}
+.edit-profile .table-profile-table tr td span {
+  color: #9b9b9b;
+  font-size: 13px;
+  display: inline-block;
+  margin: 0 0 0 15px;
 }
 .edit-profile .page-desc {
   margin: 0 0 25px 0;
@@ -1535,6 +1567,14 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   font-size: 13px;
   border-bottom: 1px solid #EBEBEB;
   padding: 0 0 5px 0;
+}
+.edit-profile .submit-btn-block {
+  margin: 25px 0 0 0;
+  padding: 35px 0 0 0;
+  border-top: 1px solid #EBEBEB;
+}
+.edit-profile .submit-btn-block .custom-btn {
+  margin: 0 0 0 262px;
 }
 
 .side-bar {
