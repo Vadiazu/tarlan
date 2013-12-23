@@ -517,6 +517,7 @@ figure figcaption {
   box-sizing: border-box;
   position: relative;
   min-height: 95px;
+  line-height: 95px;
   -webkit-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
   -moz-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
   -ms-border-radius: 7px 7px 7px 7px/30px 30px 30px 30px;
@@ -525,6 +526,15 @@ figure figcaption {
   -webkit-box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 60px -20px rgba(0, 0, 0, 0.2);
+}
+.custom-label .text-wrapper {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  line-height: normal;
+}
+.custom-label.promo {
+  padding: 10px 57px;
 }
 .custom-label.plener {
   font-size: 14px;

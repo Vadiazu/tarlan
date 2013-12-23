@@ -221,8 +221,18 @@ figure{
     @include box-sizing(border-box);
     position: relative;
     min-height: 95px;
+    line-height: 95px;
     @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
     @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
+    .text-wrapper{
+      display: inline-block;
+      text-align: left;
+      vertical-align: middle;
+      line-height: normal;
+    }
+    &.promo{
+      padding: 10px 57px;
+    }
     &.plener{
       font-size: 14px;
       color: #464646;
