@@ -409,4 +409,48 @@
             }
         }
     }
+
+    .project-managers-block{
+        margin: 80px 0 0 0;
+
+        h3{
+            color: #464646;
+            @include normal-font(24px, 24px);
+            padding: 0 0 8px 0;
+            border-bottom: 1px solid #DBC4BD;
+            margin: 0 0 30px 0;
+        }
+
+        .project-manager-unit{
+            width: 225px;
+            margin: 0 90px 0 0;
+            float: left;
+
+            .project-manager-img{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            dl{
+                margin: 25px 0 0 0;
+                padding: 0;
+                text-align: center;
+
+                dt{
+                    color: #464646;
+                    @extend .robotoLight;
+                    @include normal-font(24px, 24px);
+                    margin: 0 0 13px 0;
+                }
+
+                dd{
+                    margin: 0 0 10px 0;
+                    color: #898989;
+                    @include normal-font(14px, 18px);
+                }
+            }
+        }
+    }
 }
