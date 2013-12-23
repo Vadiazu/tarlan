@@ -386,7 +386,7 @@ body {
   font-family: "robotothin";
 }
 
-.robotoLight, h1, h2, h3, h4, h5, h6, .page-title, .main-header .header-invite .timer-text, .main-header .about-block p, .center .page-desc h2, .center .council-block .council-unit .council-details h3, .events-block .events-unit .events-info .date, .edit-profile .table-profile-table tr td:first-child, .edit-profile .custom-label .promo-code .code, .committee .committee-head .committee-head-details dl dt, .footer .main-footer .main-footer-inner .footer-phones {
+.robotoLight, h1, h2, h3, h4, h5, h6, .page-title, .main-header .header-invite .timer-text, .main-header .about-block p, .center .page-desc h2, .center .council-block .council-unit .council-details h3, .events-block .events-unit .events-info .date, .edit-profile .table-profile-table tr td:first-child, .edit-profile .custom-label .promo-code .code, .committee .committee-head .committee-head-details dl dt, .committee .project-managers-block .project-manager-unit dl dt, .footer .main-footer .main-footer-inner .footer-phones {
   font-family: "robotolight";
 }
 
@@ -1460,6 +1460,10 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .center .participate-btn {
   margin: 35px 0 0 0;
 }
+.center .video-container {
+  padding: 60px 0 45px;
+  width: 660px;
+}
 
 .events-block + .events-block {
   margin: 60px 0 0 0;
@@ -1659,6 +1663,43 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 .committee .committee-head .committee-head-details dl dd.email {
   margin: 50px 0 0 0;
 }
+.committee .project-managers-block {
+  margin: 80px 0 0 0;
+}
+.committee .project-managers-block h3 {
+  color: #464646;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0 0 8px 0;
+  border-bottom: 1px solid #DBC4BD;
+  margin: 0 0 30px 0;
+}
+.committee .project-managers-block .project-manager-unit {
+  width: 225px;
+  margin: 0 90px 0 0;
+  float: left;
+}
+.committee .project-managers-block .project-manager-unit .project-manager-img img {
+  max-width: 100%;
+  height: auto;
+}
+.committee .project-managers-block .project-manager-unit dl {
+  margin: 25px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+.committee .project-managers-block .project-manager-unit dl dt {
+  color: #464646;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 13px 0;
+}
+.committee .project-managers-block .project-manager-unit dl dd {
+  margin: 0 0 10px 0;
+  color: #898989;
+  font-size: 14px;
+  line-height: 18px;
+}
 
 .side-bar {
   width: 170px;
@@ -1719,6 +1760,9 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   border-radius: 10px 10px 10px 10px/40px 40px 40px 40px;
   height: 108px;
   width: 130px;
+  -webkit-box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 17px rgba(0, 0, 0, 0.3);
 }
 .members-events .participant-container .participant .name {
   color: #2e87a9;
