@@ -55,6 +55,7 @@
           @include border-radius(10px 10px 10px 10px / 40px 40px 40px 40px);
           height: 108px;
           width: 130px;
+          @include box-shadow(0 6px 17px rgba(0, 0, 0, 0.3));
         }
       }
       .name{
