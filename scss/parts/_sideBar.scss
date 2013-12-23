@@ -52,9 +52,9 @@
         height: 108px;
         width: 130px;
         img{
-          @include border-radius(20px 20px 20px 20px / 54px 54px 54px 54px);
+          @include border-radius(10px 10px 10px 10px / 40px 40px 40px 40px);
           height: 108px;
-          max-width: 100%;
+          width: 130px;
         }
       }
       .name{
