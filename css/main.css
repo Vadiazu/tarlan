@@ -1483,7 +1483,13 @@ input:focus {
   width: 130px;
 }
 .members-events .participant-container .participant .image-container img {
-  margin: -13px 0 0 -15px;
+  -webkit-border-radius: 20px 20px 20px 20px/54px 54px 54px 54px;
+  -moz-border-radius: 20px 20px 20px 20px/54px 54px 54px 54px;
+  -ms-border-radius: 20px 20px 20px 20px/54px 54px 54px 54px;
+  -o-border-radius: 20px 20px 20px 20px/54px 54px 54px 54px;
+  border-radius: 20px 20px 20px 20px/54px 54px 54px 54px;
+  height: 108px;
+  max-width: 100%;
 }
 .members-events .participant-container .participant .name {
   color: #2e87a9;
