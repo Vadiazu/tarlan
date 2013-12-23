@@ -47,6 +47,11 @@
 
             .council-img{
                 width: 265px;
+
+                img{
+                    border-radius: 15px 15px 15px 15px /120px 120px 120px 120px;
+                    @include box-shadow(0 6px 17px rgba(0, 0, 0, 0.3));
+                }
             }
 
             .council-details{
@@ -262,4 +267,68 @@
     line-height: normal;
     vertical-align: middle;
   }
+}
+
+.edit-profile{
+    .table-profile-table{
+        input[type="text"]{
+            position: relative;
+
+            &:before{
+                content: "*";
+                position: absolute;
+                right: 0px;
+                top: 0px;
+                color: #ed1c24;
+                font-size: 28px;
+                @extend .robotoBlack;
+            }
+        }
+
+        tr{
+            td{
+                padding: 15px 20px;
+
+                &:first-child{
+                    width: 220px;
+                    text-align: right;
+                    color: #464646;
+                    @include normal-font(18px, 18px);
+                    @extend .robotoLight;
+                }
+            }
+        }
+    }
+
+    .page-desc{
+        margin: 0 0 25px 0;
+    }
+
+    .custom-label{
+        padding: 50px 57px;
+
+        .promo-code{
+            color: #c2c2c2;
+            @include normal-font(14px, 14px);
+            padding: 0 34px 0 0;
+            border-right: 1px solid #EBEBEB;
+
+            .code{
+                color: #464646;
+                @include normal-font(35px, 35px);
+                @extend .robotoLight;
+                display: block;
+            }
+        }
+
+        .promo-code-desc{
+            overflow: hidden;
+            color: #9b9b9b;
+            @include normal-font(14px, 18px);
+
+            strong{
+                color: #464646;
+            }
+        }
+    }
 }

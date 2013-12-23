@@ -215,5 +215,10 @@ figure{
     }
 }
 
+.custom-label{
+    @include sprite-image-sprite(custom-label-bg);
+    @include box-sizing(border-box);
+}
+
 
 @import "includes";
