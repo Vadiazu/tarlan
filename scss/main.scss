@@ -39,7 +39,12 @@ img{
 body{
   font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #636363;
-    background: #F6F6F6;
+  background: #F6F6F6;
+  min-width: 1000px;
+  overflow-x: hidden;
+  &.home-page{
+    min-width: 1300px;
+  }
 }
 
 .center-wrapper{
@@ -222,6 +227,9 @@ figure{
 }
 
 .center{
+  .video-side.full{
+    width: auto;
+  }
   .custom-label{
       background: #fff;
       @include box-sizing(border-box);

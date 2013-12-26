@@ -344,6 +344,11 @@ body {
   font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #636363;
   background: #F6F6F6;
+  min-width: 1000px;
+  overflow-x: hidden;
+}
+body.home-page {
+  min-width: 1300px;
 }
 
 .center-wrapper {
@@ -515,6 +520,9 @@ figure figcaption {
   margin: 10px 0 0 0;
 }
 
+.center .video-side.full {
+  width: auto;
+}
 .center .custom-label {
   background: #fff;
   -webkit-box-sizing: border-box;
