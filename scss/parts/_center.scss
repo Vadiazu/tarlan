@@ -454,3 +454,184 @@
         }
     }
 }
+
+.participant{
+    .left-side{
+        width: 130px;
+
+        + .right-side{
+            margin: 0 0 0 165px;
+        }
+    }
+
+    .right-side{
+        dl{
+            margin: 0;
+
+            dt{
+                color: #363636;
+                @include normal-font(45px, 35px);
+                @extend .robotoLight;
+                margin: 0 0 30px 0;
+
+                .age{
+                    vertical-align: top;
+                    margin: 0 0 0 10px;
+                    color: #898989;
+                    @include normal-font(24px, 18px);
+                    display: inline-block;
+                    padding: 9px 15px;
+                    background: #fff;
+                    @include border-radius(20px 20px 20px 20px/120px 120px 120px 120px);
+                    @include box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+                }
+            }
+
+            dd{
+                margin: 0;
+                font-style: italic;
+                @include normal-font(16px, 16px);
+                color: #898989;
+
+                a{
+                    font-style: normal;
+                    color: #2e87a9;
+                    @include normal-font(12px, 12px);
+                    float: right;
+                    text-decoration: underline;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+
+                + dd{
+                    margin: 10px 0 0 0;
+                }
+            }
+        }
+
+        p{
+            color: #363636;
+            @include normal-font(14px, 18px);
+            margin: 35px 0 0 0;
+        }
+    }
+
+    .competition-info-block{
+        margin: 65px 0 0 0;
+        padding: 0 0 9px 0;
+        border-bottom: 1px solid #B7C4CE;
+
+        h3{
+            margin: 0;
+            color: #464646;
+            @include normal-font(24px, 24px);
+        }
+
+        .competition-info{
+            color: #898989;
+            @include normal-font(12px, 12px);
+            margin: 12px 0 0 0;
+        }
+    }
+
+    .competition-works{
+        margin: 12px 0 0 0;
+
+        h3{
+            color: #c2c2c2;
+            @include normal-font(24px, 24px);
+            margin: 0 0 30px 0;
+        }
+
+        .competition-work-unit{
+            display: inline-block;
+            vertical-align: top;
+            width: 209px;
+            margin: 0 28px 28px 0;
+
+            .competition-work-img{
+                width: 209px;
+                height: 209px;
+                padding: 15px;
+                @include box-sizing(border-box);
+                background: #fff url("../img/default-frame.png") no-repeat;
+                text-align: center;
+                position: relative;
+                @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
+
+                a{
+                    display: block;
+                }
+
+                img{
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    @include box-shadow(0 1px 3px rgba(#1e3239, 0.30));
+                }
+
+                &:before{
+                    content: "";
+                    position: absolute;
+                    width: 91px;
+                    height: 40px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    bottom: -18px;
+                }
+            }
+
+            .competition-work-info{
+                margin: 20px 0 0 0;
+                padding: 0;
+                text-align: center;
+
+                dt{
+                    @include normal-font(14px, 14px);
+                    color: #acacac;
+                    font-style: italic;
+                }
+
+                dd{
+                    font-size: 18px;
+                    color: #363636;
+                    margin: 15px 0 0 0;
+                }
+            }
+
+            &.second-place{
+                .competition-work-img{
+                    background: url("../img/second-place-frame.png") no-repeat;
+
+                    &:before{
+                        background: url("../img/second-place-text.png") no-repeat;
+                    }
+                }
+            }
+            &.first-place{
+                .competition-work-img{
+                    background: url("../img/first-place-frame.png") no-repeat;
+
+                    &:before{
+                        background: url("../img/first-place-text.png") no-repeat;
+                    }
+                }
+            }
+            &.third-place{
+                .competition-work-img{
+                    background: url("../img/third-place-frame.png") no-repeat;
+
+                    &:before{
+                        background: url("../img/third-place-text.png") no-repeat;
+                    }
+                }
+            }
+        }
+    }
+}
