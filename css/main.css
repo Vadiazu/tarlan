@@ -391,7 +391,7 @@ body {
   font-family: "robotothin";
 }
 
-.robotoLight, h1, h2, h3, h4, h5, h6, .page-title, .main-header .header-invite .timer-text, .main-header .about-block p, .center .page-desc h2, .center .council-block .council-unit .council-details h3, .events-block .events-unit .events-info .date, .edit-profile .table-profile-table tr td:first-child, .edit-profile .custom-label .promo-code .code, .committee .committee-head .committee-head-details dl dt, .committee .project-managers-block .project-manager-unit dl dt, .footer .main-footer .main-footer-inner .footer-phones {
+.robotoLight, h1, h2, h3, h4, h5, h6, .page-title, .main-header .header-invite .timer-text, .main-header .about-block p, .center .page-desc h2, .center .council-block .council-unit .council-details h3, .events-block .events-unit .events-info .date, .edit-profile .table-profile-table tr td:first-child, .edit-profile .custom-label .promo-code .code, .committee .committee-head .committee-head-details dl dt, .committee .project-managers-block .project-manager-unit dl dt, .participant .right-side dl dt, .footer .main-footer .main-footer-inner .footer-phones {
   font-family: "robotolight";
 }
 
@@ -1829,6 +1829,171 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
   color: #898989;
   font-size: 14px;
   line-height: 18px;
+}
+
+.participant .left-side {
+  width: 130px;
+}
+.participant .left-side + .right-side {
+  margin: 0 0 0 165px;
+}
+.participant .right-side dl {
+  margin: 0;
+}
+.participant .right-side dl dt {
+  color: #363636;
+  font-size: 45px;
+  line-height: 35px;
+  margin: 0 0 30px 0;
+}
+.participant .right-side dl dt .age {
+  vertical-align: top;
+  margin: 0 0 0 10px;
+  color: #898989;
+  font-size: 24px;
+  line-height: 18px;
+  display: inline-block;
+  padding: 9px 15px;
+  background: #fff;
+  -webkit-border-radius: 20px 20px 20px 20px/120px 120px 120px 120px;
+  -moz-border-radius: 20px 20px 20px 20px/120px 120px 120px 120px;
+  -ms-border-radius: 20px 20px 20px 20px/120px 120px 120px 120px;
+  -o-border-radius: 20px 20px 20px 20px/120px 120px 120px 120px;
+  border-radius: 20px 20px 20px 20px/120px 120px 120px 120px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+.participant .right-side dl dd {
+  margin: 0;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 16px;
+  color: #898989;
+}
+.participant .right-side dl dd a {
+  font-style: normal;
+  color: #2e87a9;
+  font-size: 12px;
+  line-height: 12px;
+  float: right;
+  text-decoration: underline;
+}
+.participant .right-side dl dd a:hover {
+  text-decoration: none;
+}
+.participant .right-side dl dd + dd {
+  margin: 10px 0 0 0;
+}
+.participant .right-side p {
+  color: #363636;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 35px 0 0 0;
+}
+.participant .competition-info-block {
+  margin: 65px 0 0 0;
+  padding: 0 0 9px 0;
+  border-bottom: 1px solid #B7C4CE;
+}
+.participant .competition-info-block h3 {
+  margin: 0;
+  color: #464646;
+  font-size: 24px;
+  line-height: 24px;
+}
+.participant .competition-info-block .competition-info {
+  color: #898989;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 12px 0 0 0;
+}
+.participant .competition-works {
+  margin: 12px 0 0 0;
+}
+.participant .competition-works h3 {
+  color: #c2c2c2;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 0 0 30px 0;
+}
+.participant .competition-works .competition-work-unit {
+  display: inline-block;
+  vertical-align: top;
+  width: 209px;
+  margin: 0 28px 28px 0;
+}
+.participant .competition-works .competition-work-unit .competition-work-img {
+  width: 209px;
+  height: 209px;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: white url("../img/default-frame.png") no-repeat;
+  text-align: center;
+  position: relative;
+  -webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+}
+.participant .competition-works .competition-work-unit .competition-work-img a {
+  display: block;
+}
+.participant .competition-works .competition-work-unit .competition-work-img img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-box-shadow: 0 1px 3px rgba(30, 50, 57, 0.3);
+  -moz-box-shadow: 0 1px 3px rgba(30, 50, 57, 0.3);
+  box-shadow: 0 1px 3px rgba(30, 50, 57, 0.3);
+}
+.participant .competition-works .competition-work-unit .competition-work-img:before {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 40px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -18px;
+}
+.participant .competition-works .competition-work-unit .competition-work-info {
+  margin: 20px 0 0 0;
+  padding: 0;
+  text-align: center;
+}
+.participant .competition-works .competition-work-unit .competition-work-info dt {
+  font-size: 14px;
+  line-height: 14px;
+  color: #acacac;
+  font-style: italic;
+}
+.participant .competition-works .competition-work-unit .competition-work-info dd {
+  font-size: 18px;
+  color: #363636;
+  margin: 15px 0 0 0;
+}
+.participant .competition-works .competition-work-unit.second-place .competition-work-img {
+  background: url("../img/second-place-frame.png") no-repeat;
+}
+.participant .competition-works .competition-work-unit.second-place .competition-work-img:before {
+  background: url("../img/second-place-text.png") no-repeat;
+}
+.participant .competition-works .competition-work-unit.first-place .competition-work-img {
+  background: url("../img/first-place-frame.png") no-repeat;
+}
+.participant .competition-works .competition-work-unit.first-place .competition-work-img:before {
+  background: url("../img/first-place-text.png") no-repeat;
+}
+.participant .competition-works .competition-work-unit.third-place .competition-work-img {
+  background: url("../img/third-place-frame.png") no-repeat;
+}
+.participant .competition-works .competition-work-unit.third-place .competition-work-img:before {
+  background: url("../img/third-place-text.png") no-repeat;
 }
 
 .side-bar {
