@@ -38,7 +38,37 @@ $(document).ready(function(){
     });
 
     //fancybox in photo list
+    if($(".photo-list").length){
+        $(".photo-list .photo-list-unit a").fancybox();
+    }
 
-    $(".photo-list .photo-list-unit a").fancybox();
 
+    //menu control
+    $(".menu-wrapper .with-sub").hover(
+        function(){
+            if(!$(this).hasClass("active")){
+                $(".with-sub").removeClass("active");
+                $(".menu-wrapper .drop-down").slideUp(200);
+                $(".drop-down-bg").slideDown(200);
+                $(this).children(".drop-down").slideDown(200);
+            }
+        },
+        function(){
+            if($(".drop-down-bg").hasClass("active")){
+                if(!$(this).hasClass("active")){
+                    $(".menu-wrapper .drop-down").slideUp(200);
+                    $(".menu-wrapper .drop-down a").each(function(){
+                        if($(this).hasClass("active")){
+                            $(this).parents(".with-sub").addClass("active");
+                            $(this).parents(".drop-down").slideDown(200);
+                        }
+                    });
+                }
+            }
+            else{
+                $(".menu-wrapper .drop-down").slideUp(200);
+                $(".drop-down-bg").slideUp(200);
+            }
+        }
+    )
 });

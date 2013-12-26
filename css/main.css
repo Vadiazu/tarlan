@@ -604,15 +604,19 @@ figure figcaption {
   position: relative;
 }
 .main-header .header-top-line .drop-down-bg {
+  position: absolute;
   background: #ffffff;
   left: 0;
   right: 0;
   height: 26px;
-  bottom: -26px;
+  top: 100%;
   -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
   display: none;
+}
+.main-header .header-top-line .drop-down-bg.active {
+  display: block;
 }
 .main-header .header-top-line a {
   color: #ffffff;
@@ -641,7 +645,7 @@ figure figcaption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
   opacity: 0.2;
 }
-.main-header .header-top-line .menu-wrapper .with-sub:hover:before {
+.main-header .header-top-line .menu-wrapper .with-sub:before {
   content: '';
   position: absolute;
   width: 0px;
@@ -652,6 +656,16 @@ figure figcaption {
   bottom: 0;
   left: 50%;
   margin-left: -8px;
+  display: none;
+}
+.main-header .header-top-line .menu-wrapper .with-sub:hover:before {
+  display: block;
+}
+.main-header .header-top-line .menu-wrapper .with-sub.active .drop-down {
+  display: block;
+}
+.main-header .header-top-line .menu-wrapper .with-sub.active:before {
+  display: block;
 }
 .main-header .header-top-line .menu-wrapper > ul {
   text-align: justify;
@@ -689,6 +703,7 @@ figure figcaption {
   height: 26px;
   line-height: 26px;
   display: none;
+  z-index: 1;
 }
 .main-header .header-top-line .menu-wrapper > ul > li .drop-down ul {
   white-space: nowrap;
@@ -706,6 +721,7 @@ figure figcaption {
 }
 .main-header .header-top-line .menu-wrapper > ul > li .drop-down li a:hover, .main-header .header-top-line .menu-wrapper > ul > li .drop-down li a.active {
   color: #464646;
+  text-decoration: none;
 }
 .main-header .header-top-line .menu-wrapper > ul > li .drop-down li a.active {
   font-weight: bold;
@@ -751,6 +767,14 @@ figure figcaption {
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 24px;
+}
+.main-header .take-part {
+  padding: 15px 0;
+  color: #ffffff;
+}
+.main-header .take-part h2 {
+  color: #ffffff;
+  margin: 0;
 }
 .main-header .about-block {
   margin-top: 52px;
