@@ -71,4 +71,11 @@ $(document).ready(function(){
             }
         }
     )
+
+    //custom select
+//    $('select').selectpicker({
+//        showSubtext: true
+//    });
+
+
 });
