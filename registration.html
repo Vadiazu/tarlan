@@ -141,76 +141,81 @@
                 стране и обеспечивает ее всеми необходимыми правилами. </div>
         </div>
         <div class="edit-profile">
-            <div class="custom-label promo">
-                <div class="text-wrapper">
-                    <div class="promo-code fl-left">
-                        Ваш код учасника:
-                        <span class="code">72btj57t</span>
+            <form action="#">
+                <div class="step1" style="display: block">
+                    <div class="errors-block">
+                        <h2>Реєстрацію не було продовжено</h2>
+                        <h3>Відмічені поля були заповнені некоректно, або не були заповнені взагалі</h3>
                     </div>
-                    <div class="promo-code-desc">
-                        <strong>Код учасника</strong> – це магічне єднання художника з природою.
-                        Це особливий вид мистецтва, коли натхнення від осягнутих
-                        зором краєвидів знаходять своє миттєве відображення на полотні,
-                        передаючи неповторний дух місцевості та її сприйняття художником.
+                    <table class="table-profile-table">
+                        <tr>
+                            <td>E-mail</td>
+                            <td><label><input type="text" name="name" class="medium-input error"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
+                        </tr>
+                        <tr>
+                            <td>ПІП</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span>Ваші повні презвище, ім;я, та по-батькові</span></td>
+                        </tr>
+                        <tr>
+                            <td>Дата народження</td>
+                            <td><label><input type="text" name="name" class="small-input"></label> <span>число / місяць / рік</span></td>
+                        </tr>
+                    </table>
+                    <a class="custom-btn next-step" href="javascript:void(0);">Продовжити реєстрацію</a>
+                </div>
+                <div class="step2" style="display: none;">
+                    <table class="table-profile-table">
+                        <tbody>
+                        <tr>
+                            <td>Фтографія</td>
+                            <td><input type="file"> <span>Учасники з фторафіями з’являться на головній сторінці сайту</span></td>
+                        </tr>
+                        <tr>
+                            <td>Трохи про себе</td>
+                            <td><textarea class="medium-textarea"></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="profile-text">Контактні дані (окрім міста проживання доступні тільки адміністраторам сайту)</div>
+                    <table class="table-profile-table">
+                        <tbody><tr>
+                            <td>Індекс</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
+                        </tr>
+                        <tr>
+                            <td>Область</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
+                        </tr>
+                        <tr>
+                            <td>Район</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
+                        </tr>
+                        <tr>
+                            <td>Місто/Село</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
+                        </tr>
+                        <tr>
+                            <td>Вулиця</td>
+                            <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
+                        </tr>
+                        <tr>
+                            <td>Будинок</td>
+                            <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
+                        </tr>
+                        <tr>
+                            <td>Квартира</td>
+                            <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
+                        </tr>
+                        </tbody></table>
+                    <div class="submit-btn-block">
+                        <button type="submit" class="custom-btn save-changes">Зберегти зміни</button>
                     </div>
                 </div>
-            </div>
-            <form action="#">
-                <table class="table-profile-table">
-                    <tr>
-                        <td>E-mail</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>ПІБ</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Ваші повні презвище, ім;я, та по-батькові</span></td>
-                    </tr>
-                    <tr>
-                        <td>Дата народження</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span>число / місяць / рік</span></td>
-                    </tr>
-                    <tr>
-                        <td>Фтографія</td>
-                        <td><input type="file"/> <span>Учасники з фторафіями з’являться на головній сторінці сайту</span></td>
-                    </tr>
-                    <tr>
-                        <td>Трохи про себе</td>
-                        <td><textarea class="medium-textarea"></textarea></td>
-                    </tr>
-                </table>
-                <div class="profile-text">Контактні дані (окрім міста проживання доступні тільки адміністраторам сайту)</div>
-                <table class="table-profile-table">
-                    <tr>
-                        <td>Індекс</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>Область</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Район</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Місто/Село</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Вулиця</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Будинок</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Квартира</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                </table>
-                <div class="submit-btn-block">
-                    <button type="submit" class="custom-btn">Зберегти зміни</button>
+                <div class="step3" style="display: none">
+                    <h2>Реєстрацію майже заершено</h2>
+                    <p>На вказану вами електронну пошту було надіслано  листа із посиланням-подвердженням.
+                        Перехід по цьому посиланню завершить реєстрацію</p>
+                    <a class="back-btn" href="javascript:void(0);">Повернутися на головну сторінку</a>
                 </div>
             </form>
         </div>

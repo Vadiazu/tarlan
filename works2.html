@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Tarlan</title>
 
+        <link type="text/css" rel="stylesheet" href="css/flipclock.css">
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="font/stylesheet.css">
 
@@ -17,6 +18,9 @@
         <script src="js/jquery.customSelect.min.js"></script>
 
         <script src="js/slider/jquery.bxslider.min.js"></script>
+
+        <script src="js/flipclock/flipclock.min.js"></script>
+        <script src="js/flipclock/ua.js"></script>
 
         <!--[if lte IE 9]>
             <script type="text/javascript" src="js/html5shiv.js"></script>
@@ -130,89 +134,23 @@
         </div>
     </div>
 </header>
-
-<section class="container center-margin center-wrapper">
+<div class="works-nav-block center-wrapper clear">
+    <a class="prev-work fl-left" href="javascript:void(0);"><span class="prev-arrow"></span> День Незалежності України</a>
+    <a class="next-work fl-right" href="javascript:void(0);">Український Великдень <span class="next-arrow"></span></a>
+    <div class="current-block">
+        <a href="javascript:void(0);" class="all-concurs">Усі конкурси</a>
+    </div>
+</div>
+<section class="container center-wrapper clear">
     <div class="center">
-        <div class="page-desc">
-            <h2>Редагування профайлу</h2>
-            <div class="desc-text">Далеко-далеко за словесными горами в стране гласных и согласных живут
-                рыбные тексты. Вдали от всех живут они в буквенных домах на берегу
-                Семантика большого языкового океана. Маленький ручеек Даль журчит по всей
-                стране и обеспечивает ее всеми необходимыми правилами. </div>
-        </div>
-        <div class="edit-profile">
-            <div class="custom-label promo">
-                <div class="text-wrapper">
-                    <div class="promo-code fl-left">
-                        Ваш код учасника:
-                        <span class="code">72btj57t</span>
-                    </div>
-                    <div class="promo-code-desc">
-                        <strong>Код учасника</strong> – це магічне єднання художника з природою.
-                        Це особливий вид мистецтва, коли натхнення від осягнутих
-                        зором краєвидів знаходять своє миттєве відображення на полотні,
-                        передаючи неповторний дух місцевості та її сприйняття художником.
-                    </div>
+        <div class="counter-block">
+            <h2>«День Святого Миколая» та «Різдво Христове» <span>2013 рік</span></h2>
+            <div class="custom-label counter">
+                <div class="counter-side">
+                    <span class="time-left">До кінця конкурсу залишилося:</span>
+                    <div class="timer"></div>
                 </div>
             </div>
-            <form action="#">
-                <table class="table-profile-table">
-                    <tr>
-                        <td>E-mail</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>ПІБ</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Ваші повні презвище, ім;я, та по-батькові</span></td>
-                    </tr>
-                    <tr>
-                        <td>Дата народження</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span>число / місяць / рік</span></td>
-                    </tr>
-                    <tr>
-                        <td>Фтографія</td>
-                        <td><input type="file"/> <span>Учасники з фторафіями з’являться на головній сторінці сайту</span></td>
-                    </tr>
-                    <tr>
-                        <td>Трохи про себе</td>
-                        <td><textarea class="medium-textarea"></textarea></td>
-                    </tr>
-                </table>
-                <div class="profile-text">Контактні дані (окрім міста проживання доступні тільки адміністраторам сайту)</div>
-                <table class="table-profile-table">
-                    <tr>
-                        <td>Індекс</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span>Треба ввести існучий е-mail, він буде вашим логіном.</span></td>
-                    </tr>
-                    <tr>
-                        <td>Область</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Район</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Місто/Село</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Вулиця</td>
-                        <td><label><input type="text" name="name" class="medium-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Будинок</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                    <tr>
-                        <td>Квартира</td>
-                        <td><label><input type="text" name="name" class="small-input"></label> <span></span></td>
-                    </tr>
-                </table>
-                <div class="submit-btn-block">
-                    <button type="submit" class="custom-btn">Зберегти зміни</button>
-                </div>
-            </form>
         </div>
     </div>
 </section>
