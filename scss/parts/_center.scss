@@ -358,6 +358,50 @@
             margin: 0 0 0 262px;
         }
     }
+
+    .errors-block{
+        margin: 0 0 50px 245px;
+
+        h2{
+            color: #ed1c24;
+            @include normal-font(36px, 36px);
+            margin: 0 0 20px 0;
+        }
+
+        h3{
+            color: #f96c72;
+            @include normal-font(14px, 14px);
+            @extend .arial;
+            margin: 0;
+        }
+    }
+
+    .step1{
+        .next-step{
+            margin: 50px 0 0 245px;
+        }
+    }
+
+    .step3{
+        width: 600px;
+        margin: 20px auto 0;
+        text-align: center;
+
+        h2{
+            color: #2fb742;
+            @include normal-font(36px, 36px);
+        }
+
+        p{
+            color: #9b9b9b;
+            @include normal-font(14px, 18px);
+        }
+
+        .back-btn{
+            display: inline-block;
+            margin: 45px 0 0 0;
+        }
+    }
 }
 
 .radius-img{
@@ -517,121 +561,354 @@
             margin: 35px 0 0 0;
         }
     }
+}
 
-    .competition-info-block{
-        margin: 65px 0 0 0;
-        padding: 0 0 9px 0;
-        border-bottom: 1px solid #B7C4CE;
+.competition-works{
+    margin: 12px 0 0 0;
 
-        h3{
-            margin: 0;
-            color: #464646;
-            @include normal-font(24px, 24px);
+    h3{
+        color: #c2c2c2;
+        @include normal-font(24px, 24px);
+        margin: 0 0 30px 0;
+    }
+
+    .competition-work-unit{
+        display: inline-block;
+        vertical-align: top;
+        width: 209px;
+        margin: 0 28px 28px 0;
+
+        .competition-work-img{
+            width: 209px;
+            height: 209px;
+            padding: 15px;
+            @include box-sizing(border-box);
+            background: #fff url("../img/default-frame.png") no-repeat;
+            text-align: center;
+            position: relative;
+            @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
+
+            a{
+                display: block;
+            }
+
+            img{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+                @include box-shadow(0 1px 3px rgba(#1e3239, 0.30));
+            }
+
+            &:before{
+                content: "";
+                position: absolute;
+                width: 91px;
+                height: 40px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                bottom: -18px;
+            }
         }
 
-        .competition-info{
+        .competition-work-info{
+            margin: 20px 0 0 0;
+            padding: 0;
+            text-align: center;
+
+            dt{
+                @include normal-font(14px, 14px);
+                color: #acacac;
+                font-style: italic;
+            }
+
+            dd{
+                font-size: 18px;
+                color: #363636;
+                margin: 15px 0 0 0;
+            }
+        }
+
+        &.second-place{
+            .competition-work-img{
+                background: url("../img/second-place-frame.png") no-repeat;
+
+                &:before{
+                    background: url("../img/second-place-text.png") no-repeat;
+                }
+            }
+        }
+        &.first-place{
+            .competition-work-img{
+                background: url("../img/first-place-frame.png") no-repeat;
+
+                &:before{
+                    background: url("../img/first-place-text.png") no-repeat;
+                }
+            }
+        }
+        &.third-place{
+            .competition-work-img{
+                background: url("../img/third-place-frame.png") no-repeat;
+
+                &:before{
+                    background: url("../img/third-place-text.png") no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.competition-info-block{
+    margin: 65px 0 0 0;
+    padding: 0 0 9px 0;
+    border-bottom: 1px solid #B7C4CE;
+
+    h3{
+        margin: 0;
+        color: #464646;
+        @include normal-font(24px, 24px);
+    }
+
+    .competition-info{
+        color: #898989;
+        @include normal-font(12px, 12px);
+        margin: 12px 0 0 0;
+    }
+}
+
+.participants{
+    .filter-list{
+        list-style: none;
+        margin: 0 0 30px 0;
+        padding: 0;
+
+        li{
+            float: left;
+
+            span{
+                display: block;
+                @extend .robotoLight;
+                color: #464646;
+                @include normal-font(18px, 18px);
+                margin: 0 0 10px 0;
+            }
+
+            + li{
+                margin: 0 0 0 15px;
+            }
+        }
+    }
+
+    .participants-list{
+        .participants-unit{
+            width: 290px;
+            display: inline-block;
+            margin: 0 15px 60px 0;
+
+            .participants-img{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .participants-info{
+                margin: 22px 0 0 0;
+                padding: 0 0 0 10px;
+
+                dt{
+                    a{
+                        color: #2e87a9;
+                        @extend .robotoLight;
+                        @include normal-font(18px, 18px);
+                        display: inline-block;
+                    }
+                }
+
+                dd{
+                    margin: 10px 0 0 0;
+                    font-style: italic;
+                    color: #acacac;
+                    @include normal-font(14px, 14px);
+                }
+            }
+        }
+    }
+}
+
+.work-inner{
+    .work-img{
+        margin: 0 20px 0 0;
+        width: 466px;
+        height: 466px;
+        padding: 15px;
+        @include box-sizing(border-box);
+        background: #fff url("../img/big-default-frame.jpg") no-repeat;
+        text-align: center;
+        position: relative;
+        @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
+
+        a{
+            display: block;
+        }
+
+        img{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @include box-shadow(0 1px 3px rgba(#1e3239, 0.30));
+        }
+    }
+
+    .work-details{
+        width: 460px;
+
+        .work-material{
             color: #898989;
-            @include normal-font(12px, 12px);
-            margin: 12px 0 0 0;
+            font-style: italic;
+            @include normal-font(14px, 14px);
+            margin: 0 0 30px 0;
+
+            .material-icon{
+                display: inline-block;
+                vertical-align: -6px;
+                margin: 0 3px 0 0;
+                @include sprite-image-sprite(material-icon);
+            }
+        }
+
+        h2{
+            color: #363636;
+            @include normal-font(32px, 36px);
+            margin: 0 0 20px 0;
+        }
+
+        .work-author-block{
+            .work-author-img{
+                width: 56px;
+                margin: 0 15px 0 0;
+
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .work-author-details{
+                overflow: hidden;
+                margin: 0;
+
+                dt{
+                    a{
+                        color: #2e87a9;
+                        display: inline-block;
+                        @include normal-font(24px, 19px);
+                        @extend .robotoLight;
+                    }
+                }
+
+                dd{
+                    margin: 10px 0 0 0;
+                    @include normal-font(14px, 14px);
+                    color: #898989;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .work-like-block{
+            padding: 20px 0 0 0;
+            border-top: 1px solid #D3D7DD;
+            margin: 45px 0 0 0;
+
+            h3{
+                font-style: italic;
+                display: inline-block;
+                color: #363636;
+                @include normal-font(18px,18px);
+                padding: 0 25px 15px 0;
+                margin: 0;
+                position: relative;
+
+                .arrow-icon{
+                    position: absolute;
+                    @include sprite-image-sprite(arrow);
+                    right: 0;
+                    top: 10px;
+                }
+            }
+
+            p{
+                color: #acacac;
+                @include normal-font(12px, 18px);
+                margin: 15px 0;
+            }
         }
     }
 
     .competition-works{
-        margin: 12px 0 0 0;
+        margin: 30px 0 0 0;
+    }
+}
 
-        h3{
-            color: #c2c2c2;
-            @include normal-font(24px, 24px);
-            margin: 0 0 30px 0;
+.works-nav-block{
+    padding: 20px 0 14px 0;
+    border-bottom: 1px solid #E9E9E9;
+
+    .current-block{
+        margin: 0 250px;
+        text-align: center;
+    }
+
+    .prev-arrow, .next-arrow, .prev-work, .next-work{
+        display: inline-block;
+    }
+
+    .prev-arrow{
+        @include sprite-image-sprite(blue-arrow-left);
+        margin: 0 5px 0 0;
+    }
+
+    .next-arrow{
+        margin: 0 0 0 5px;
+        @include sprite-image-sprite(blue-arrow-right);
+    }
+
+    .next-work{
+        text-align: right;
+    }
+
+    .all-concurs{
+        text-decoration: none;
+        border-bottom: 1px dashed #2e87a9;
+
+        &:hover{
+            border-color: transparent;
         }
+    }
+}
 
-        .competition-work-unit{
-            display: inline-block;
-            vertical-align: top;
-            width: 209px;
-            margin: 0 28px 28px 0;
+.share-block{
+    text-align: right;
+    padding: 17px 0 0 0;
+}
 
-            .competition-work-img{
-                width: 209px;
-                height: 209px;
-                padding: 15px;
-                @include box-sizing(border-box);
-                background: #fff url("../img/default-frame.png") no-repeat;
-                text-align: center;
-                position: relative;
-                @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
+.counter-block{
+    h2{
+        color: #464646;
+        @include normal-font(45px, 57px);
+        margin: 0 0 60px 0;
 
-                a{
-                    display: block;
-                }
-
-                img{
-                    position: absolute;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                    @include box-shadow(0 1px 3px rgba(#1e3239, 0.30));
-                }
-
-                &:before{
-                    content: "";
-                    position: absolute;
-                    width: 91px;
-                    height: 40px;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    bottom: -18px;
-                }
-            }
-
-            .competition-work-info{
-                margin: 20px 0 0 0;
-                padding: 0;
-                text-align: center;
-
-                dt{
-                    @include normal-font(14px, 14px);
-                    color: #acacac;
-                    font-style: italic;
-                }
-
-                dd{
-                    font-size: 18px;
-                    color: #363636;
-                    margin: 15px 0 0 0;
-                }
-            }
-
-            &.second-place{
-                .competition-work-img{
-                    background: url("../img/second-place-frame.png") no-repeat;
-
-                    &:before{
-                        background: url("../img/second-place-text.png") no-repeat;
-                    }
-                }
-            }
-            &.first-place{
-                .competition-work-img{
-                    background: url("../img/first-place-frame.png") no-repeat;
-
-                    &:before{
-                        background: url("../img/first-place-text.png") no-repeat;
-                    }
-                }
-            }
-            &.third-place{
-                .competition-work-img{
-                    background: url("../img/third-place-frame.png") no-repeat;
-
-                    &:before{
-                        background: url("../img/third-place-text.png") no-repeat;
-                    }
-                }
-            }
+        span{
+            color: #c2c2c2;
+            @include normal-font(44px, 44px);
         }
     }
 }

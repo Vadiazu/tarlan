@@ -70,5 +70,25 @@ $(document).ready(function(){
                 $(".drop-down-bg").slideUp(200);
             }
         }
-    )
+    );
+
+    //step form
+    $(".next-step").on("click", function(){
+        $(this).hide();
+        $(this).parent().next().slideDown(500);
+    });
+
+    $(".save-changes").on("click", function(){
+        $(this).parents("form").find(".step1, .step2").hide();
+        $(this).parents(".step2").next().show();
+    });
+
+    //counter
+    if($(".timer").length){
+        var clock = $('.timer').FlipClock(3600,{
+            language: 'ua',
+            countdown: true,
+            clockFace: "DailyCounter"
+        });
+    }
 });

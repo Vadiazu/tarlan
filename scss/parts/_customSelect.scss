@@ -1,0 +1,61 @@
+.bootstrap-select{
+    .dropdown-toggle{
+        display: inline-block;
+        height: 38px;
+        line-height: 38px;
+        background: #fff;
+        border: 2px solid #F6F6F6;
+        outline: none;
+        @include box-sizing(border-box);
+        @include box-shadow(inset 0 1px 2px rgba(0,0,0,0.30));
+        @include border-radius(25px 25px 25px 25px/120px 120px 120px 120px);
+        position: relative;
+        padding: 0 40px 0 15px;
+
+        .text-muted{
+            font-size: 14px;
+            color: #acacac;
+        }
+
+        .filter-option{
+            display: inline-block;
+            white-space: nowrap;
+        }
+
+        .caret{
+            position: absolute;
+            @include sprite-image-sprite(caret);
+            right: 15px;
+            top: 15px;
+        }
+    }
+
+    &.open{
+        .dropdown-toggle{
+            border: 2px solid #FDB179;
+        }
+    }
+
+    .dropdown-menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-height: none!important;
+        background: #fff;
+
+        li{
+            a{
+                display: block;
+                color: #464646;
+                @include normal-font(14px, 14px);
+                text-decoration: none;
+                padding: 11px 13px;
+                cursor: pointer;
+
+                &:hover{
+                    background: #EBEBEB;
+                }
+            }
+        }
+    }
+}
