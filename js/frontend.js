@@ -84,11 +84,101 @@ $(document).ready(function(){
     });
 
     //counter
-    if($(".timer").length){
-        var clock = $('.timer').FlipClock(3600,{
-            language: 'ua',
-            countdown: true,
-            clockFace: "DailyCounter"
+    var timer  = $(".timer");
+
+    if(timer.length){
+        timer.countdown('2014/01/29', function(event) {
+             var $this = $(this).html(event.strftime(''
+                 + ' <div class="number-unit"> '
+                 +   ' <div class="numbers-bg"><span class="numbers">%w</span></div> '
+                 +   ' <div class="text">тижнів</div>'
+                 +' </div>'
+                 + '<span class="separator"></span>'
+                 + '<div class="number-unit">'
+                 +    '<div class="numbers-bg"><span class="numbers">%d</span></div>'
+                 +    '<div class="text">днів</div>'
+                 + '</div>'
+                 + '<span class="separator"></span>'
+                 + '<div class="number-unit">'
+                 +    '<div class="numbers-bg"><span class="numbers">%H</span></div>'
+                 +    '<div class="text">годин</div>'
+                 + '</div>'
+            ));
         });
     }
+
+    //works calendar slider
+    $(".competitions-slider-start ").bxSlider({
+        auto: false,
+        pause: 10000,
+        slideWidth: 235,
+        slideMargin: 20,
+        minSlides: 5,
+        maxSlides: 5,
+        moveSlides: 1,
+        pager: false,
+        controls: true
+    });
+
+   var customSlider = function(name){
+       var $frame = $(name);
+       var $wrap  = $frame.parent();
+
+       // Call Sly on frame
+       $frame.sly({
+           horizontal: 1,
+           itemNav: 'forceCentered',
+           smart: 1,
+           activateMiddle: 1,
+           activateOn: 'click',
+           mouseDragging: 0,
+           touchDragging: 0,
+           releaseSwing: 1,
+           startAt: 0,
+           scrollBar: $wrap.find('.scrollbar'),
+           scrollBy: 1,
+           speed: 500,
+           elasticBounds: 1,
+           dragHandle: 1,
+           dynamicHandle: 1,
+           clickBar: 1,
+
+           // Buttons
+           prev: $wrap.find('.btn-prev'),
+           next: $wrap.find('.btn-next')
+       });
+   };
+
+    customSlider("#winnerTab1 .custom-slider");
+    customSlider("#winnerTab2 .custom-slider");
+
+    /*Tabs*/
+    var tabsFunc = function(containerName, tabsBtn){
+        var tabContainers = $(containerName);
+        tabContainers.hide().filter(':first').show();
+
+        $(tabsBtn).click(function () {
+            tabContainers.hide();
+            tabContainers.filter(this.hash).show();
+            $(tabsBtn).removeClass('active');
+            $(this).addClass('active');
+            return false;
+        }).filter(':first').click();
+    };
+
+    tabsFunc('.tabs-container > div','.tabs li a');
+    tabsFunc('.inner-tabs-container > div','.inner-tabs li a');
+
+    //all concurs btn
+    $(".all-concurs").on("click", function(){
+        $(this).parents("body").find(".works-nav-block").hide();
+            $(this).parents("body").find(".final-title-block").hide();
+                $(this).parents("body").find(".block-all-competitions").addClass("show");
+    });
+
+    $(".collapse-btn").on("click", function(){
+        $(this).parents("body").find(".works-nav-block").show();
+                $(this).parents("body").find(".final-title-block").show();
+                    $(this).parents(".block-all-competitions").removeClass("show");
+    });
 });

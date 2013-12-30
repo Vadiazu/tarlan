@@ -48,8 +48,8 @@ body{
 }
 
 .center-wrapper{
-  margin: 0 auto;
-  width: 1000px;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 .center-margin{
@@ -239,41 +239,6 @@ figure{
       border-top: 1px solid #ebebeb;
     }
   }
-  .custom-label{
-      background: #fff;
-      @include box-sizing(border-box);
-      position: relative;
-      min-height: 95px;
-      line-height: 95px;
-      margin: 40px 0;
-      @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
-      @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
-      .text-wrapper{
-        display: inline-block;
-        text-align: left;
-        vertical-align: middle;
-        line-height: normal;
-      }
-      &.promo{
-        padding: 0px 57px;
-      }
-      &.plener{
-        margin-top: 65px;
-        font-size: 14px;
-        color: #464646;
-        .plener-image{
-          bottom: 0;
-          left: 55px;
-          position: absolute;
-          line-height: normal;
-        }
-        .plener-desc{
-          margin: 0 50px 0 195px;
-          line-height: 18px;
-          color: #464646;
-        }
-      }
-  }
 
   .page-desc.plener-intro{
     border-bottom: none;
@@ -315,4 +280,41 @@ figure{
     }
   }
 }
+
+.custom-label{
+    background: #fff;
+    @include box-sizing(border-box);
+    position: relative;
+    min-height: 95px;
+    line-height: 95px;
+    margin: 40px 0;
+    @include border-radius(7px 7px 7px 7px / 30px 30px 30px 30px);
+    @include box-shadow(0 1px 60px -20px rgba(0, 0, 0, 0.2));
+    .text-wrapper{
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        line-height: normal;
+    }
+    &.promo{
+        padding: 0px 57px;
+    }
+    &.plener{
+        margin-top: 65px;
+        font-size: 14px;
+        color: #464646;
+        .plener-image{
+            bottom: 0;
+            left: 55px;
+            position: absolute;
+            line-height: normal;
+        }
+        .plener-desc{
+            margin: 0 50px 0 195px;
+            line-height: 18px;
+            color: #464646;
+        }
+    }
+}
+
 @import "includes";

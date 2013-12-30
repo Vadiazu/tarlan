@@ -24,6 +24,39 @@
     .more-btn{
         margin: 35px 0 0 0;
     }
+
+    &.committee-side{
+        h3{
+            @include normal-font(24px, 27px);
+            margin: 0 0 27px 0;
+        }
+
+        .member-unit{
+            .member-img{
+                width: 98px;
+            }
+
+            .member-info{
+                margin: 15px 0 0 0;
+
+                dt{
+                    color: #464646;
+                    @include normal-font(18px, 18px);
+                    @extend .robotoLight;
+                }
+
+                dd{
+                    margin: 12px 0 0 0;
+                    color: #898989;
+                    @include normal-font(12px, 18px);
+                }
+            }
+
+            + .member-unit{
+                margin: 45px 0 0 0;
+            }
+        }
+    }
 }
 
 .members-events{

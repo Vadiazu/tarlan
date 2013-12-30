@@ -19,6 +19,7 @@
         <script src="js/slider/jquery.bxslider.min.js"></script>
 
         <script src="js/timer/jquery.countdown.js"></script>
+        <script src="js/sly/sly.js"></script>
 
 
         <!--[if lte IE 9]>
@@ -140,21 +141,240 @@
         <a href="javascript:void(0);" class="all-concurs">Усі конкурси</a>
     </div>
 </div>
-<section class="container center-wrapper clear">
-    <div class="block-with-counter">
-        <h2>«День Святого Миколая» та «Різдво Христове» <span>2013 рік</span></h2>
-        <div class="custom-label counter clear">
-            <div class="counter-block fl-left">
-                <h3>До кінця конкурсу залишилося:</h3>
-                <div class="timer clear"></div>
+
+<div class="block-all-competitions center-wrapper">
+    <span class="white-line"></span>
+    <div class="collapse-block">
+        <a class="collapse-btn" href="javascript:void(0);">Згорнути</a>
+    </div>
+    <div class="competitions-slider">
+        <div class="competitions-slider-start clear">
+            <div class="competitions-calendar-unit">
+                <h2>2011</h2>
+                <div class="competition-unit"><a href="javascript:void(0);">«Великодні дива»</a> <span class="date">03.01 — 19.02</span></div>
+                <div class="competition-unit"><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
             </div>
-            <a class="colored dark-button fl-right participate-btn" href="javascript:void(0);">Прийняти участь</a>
-            <div class="action-text">Ви ще маєте час на те, щоб
-                надіслати нам свої роботи!
+            <div class="competitions-calendar-unit">
+                <h2>2012</h2>
+                <div class="competition-unit"><a href="javascript:void(0);">«Великодні дива»</a> <span class="date">03.01 — 19.02</span></div>
+                <div class="competition-unit"><span class="current-concurs"></span><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
+            </div>
+            <div class="competitions-calendar-unit">
+                <h2>2013</h2>
+                <div class="competition-unit"><a href="javascript:void(0);" class="current">«День святого Миколая» та
+                    «Різдво Христове»  </a> <span class="date">03.01 — 19.02</span></div>
+                <div class="competition-unit"><span class="current-concurs"></span><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
+            </div>
+            <div class="competitions-calendar-unit">
+                <h2>2014</h2>
+                <div class="competition-unit"><a href="javascript:void(0);">«Великодні дива»</a> <span class="date">03.01 — 19.02</span></div>
+                <div class="competition-unit"><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
+                <div class="competition-unit"><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
+                <div class="competition-unit"><a href="javascript:void(0);">«Незалежність України»</a> <span class="date">13.06 — 24.09</span></div>
             </div>
         </div>
     </div>
-    <h2 class="works-title">Конкурсні роботи</h2>
+</div>
+
+<div class="final-title-block center-wrapper">
+    <div class="counter-block clear fl-right">
+        <dl class="counter">
+            <dt>8 653</dt>
+            <dd>учасників</dd>
+        </dl>
+        <dl class="counter">
+            <dt>14 847</dt>
+            <dd>робіт</dd>
+        </dl>
+    </div>
+    <h2>«День Святого Миколая» та «Різдво Христове» <span>2013 рік</span></h2>
+</div>
+
+<div class="tabs-holder center-wrapper">
+    <ul class="tabs clear">
+        <li><a href="#winners" class="winners active"><span>Переможці</span></a></li>
+        <li><a href="#finalist" class="finalist"><span>Фіналісти</span></a></li>
+    </ul>
+</div>
+<div class="winners-slide-block">
+    <div class="tabs-container">
+        <div id="winners">
+            <div class="inner-tabs-holder center-wrapper">
+                <ul class="inner-tabs clear">
+                    <li><a href="#winnerTab1">Група 7—8 років</a></li>
+                    <li><a href="#winnerTab2">Група 9—11 років</a></li>
+                    <li><a href="#winnerTab3">Група 12—14 років</a></li>
+                    <li><a href="#winnerTab4">Група 15—17 років</a></li>
+                    <li><a href="#winnerTab5">Приз глядацьких симпатій</a></li>
+                </ul>
+            </div>
+            <div class="inner-tabs-container">
+                <div id="winnerTab1">
+                    <div class="custom-slider">
+                        <div class="winners">
+                            <div class="winner-unit clear first-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner1.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Перше місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                            <div class="winner-unit clear second-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner2.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Друге місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                            <div class="winner-unit clear third-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner1.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Перше місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollbar">
+                        <div class="handle">
+                            <div class="mousearea"></div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn-prev"></button>
+                        <button class="btn-next"></button>
+                    </div>
+                </div>
+                <div id="winnerTab2">
+                    <div class="custom-slider">
+                        <div class="winners">
+                            <div class="winner-unit clear third-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner1.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Трете місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                            <div class="winner-unit clear first-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner1.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Перше місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                            <div class="winner-unit clear second-place">
+                                <div class="winner-picture fl-left">
+                                    <a href="javascript:void(0);"><img src="img/temp/winner2.jpg" alt=""/></a>
+                                </div>
+                                <div class="winner-details fl-right">
+                                    <h2>Друге місце</h2>
+                                    <h3>«Добрий Миколай дарує радість»</h3>
+                                    <div class="work-author-block clear">
+                                        <div class="work-author-img fl-left">
+                                            <img src="img/temp/work-author.jpg" alt="" class="radius-img">
+                                        </div>
+                                        <dl class="work-author-details">
+                                            <dt><a href="javascript:void(0);">Дарина Мельниченко</a></dt>
+                                            <dd>15 років, м. Сімферополь</dd>
+                                        </dl>
+                                    </div>
+                                    <div class="work-desc">Дарина вже не вперше бере участь у наших конкурсах,
+                                        але найвищу винагороду здобути їй ще не вдавалося. Судійська рада поздоровляє
+                                        Дарину з впевненою перемогою на конкурсі!</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scrollbar">
+                        <div class="handle">
+                            <div class="mousearea"></div>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button class="btn-prev"></button>
+                        <button class="btn-next"></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="finalist">
+            finalist
+        </div>
+    </div>
+</div>
+
+<section class="container center-wrapper clear">
     <aside class="side-bar committee-side fl-right">
         <h3>Художня рада
             конкурсу</h3>

@@ -1,0 +1,39 @@
+.timer{
+    line-height: normal;
+
+    .number-unit{
+        width: 68px;
+        float: left;
+
+        .numbers-bg{
+            width: 68px;
+            height: 44px;
+            background: url(../img/numbers-bg.png) no-repeat;
+
+            .numbers{
+                color: #fff;
+                @extend .robotoBlack;
+                @include normal-font(36px, 36px);
+                letter-spacing: 15px;
+                display: inline-block;
+                position: relative;
+                top: 2px;
+                left: 6px;
+            }
+        }
+
+        .text{
+            color: #898989;
+            @include normal-font(10px, 10px);
+            text-align: center;
+            margin: 5px 0 0 0;
+        }
+    }
+
+    .separator{
+        float: left;
+        width: 15px;
+        height: 44px;
+        background: url(../img/timer-separator.png) center center no-repeat;
+    }
+}

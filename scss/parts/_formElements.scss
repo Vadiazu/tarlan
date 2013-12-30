@@ -13,8 +13,10 @@ input:focus{
 }
 .placeholder-container{
     position: relative;
+
     label{
         position: absolute;
+        cursor: text;
     }
 }
 
