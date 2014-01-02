@@ -1280,13 +1280,13 @@
             }
 
             .btn-prev{
-                left: 10px;
-                @include sprite-image-sprite(big-left-arrow);
+                right: 10px;
+                @include sprite-image-sprite(big-right-arrow);
             }
 
             .btn-next{
-                right: 10px;
-                @include sprite-image-sprite(big-right-arrow);
+                left: 10px;
+                @include sprite-image-sprite(big-left-arrow);
             }
         }
 
@@ -1392,12 +1392,17 @@
             }
         }
 
+        .custom-slider{
+          overflow: visible!important;
+        }
         .scrollbar{
             background: none;
             margin: 45px 0 0 0;
+            width: 960px;
 
             .handle{
                 height: 7px;
+                cursor: pointer;
                 background: #fff;
                 @include border-radius(5px);
                 @include box-shadow(0 3px 6px rgba(0,0,0,0.30));
@@ -1407,7 +1412,6 @@
 }
 
 .inner-tabs-holder{
-    text-align: center;
     height: 36px;
     margin-bottom: 35px;
 

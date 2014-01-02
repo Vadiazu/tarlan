@@ -340,6 +340,10 @@ img {
   display: block;
 }
 
+html {
+  overflow: auto;
+}
+
 body {
   font: 12px/18px Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #636363;
@@ -2702,14 +2706,14 @@ textarea {
   opacity: 0;
 }
 .winners-slide-block .tabs-container .inner-tabs-container .btn-prev {
-  left: 10px;
-  background-position: 0 -681px;
+  right: 10px;
+  background-position: 0 -738px;
   height: 57px;
   width: 57px;
 }
 .winners-slide-block .tabs-container .inner-tabs-container .btn-next {
-  right: 10px;
-  background-position: 0 -738px;
+  left: 10px;
+  background-position: 0 -681px;
   height: 57px;
   width: 57px;
 }
@@ -2797,12 +2801,17 @@ textarea {
   font-size: 12px;
   line-height: 18px;
 }
+.winners-slide-block .tabs-container .custom-slider {
+  overflow: visible !important;
+}
 .winners-slide-block .tabs-container .scrollbar {
   background: none;
   margin: 45px 0 0 0;
+  width: 960px;
 }
 .winners-slide-block .tabs-container .scrollbar .handle {
   height: 7px;
+  cursor: pointer;
   background: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2815,7 +2824,6 @@ textarea {
 }
 
 .inner-tabs-holder {
-  text-align: center;
   height: 36px;
   margin-bottom: 35px;
 }
