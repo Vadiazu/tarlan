@@ -126,23 +126,22 @@ $(document).ready(function(){
     if($(".winners-slide-block").length){
         var customSlider = function(name){
             var $frame = $(name);
-            var $slidee = $frame.children('ul').eq(0);
             var $wrap  = $frame.parent();
-            console.log($wrap);
+
             // Call Sly on frame
             $frame.sly({
                 horizontal: 1,
                 itemNav: 'basic',
                 smart: 1,
+                activateMiddle: 1,
                 activateOn: 'click',
-                mouseDragging: 1,
-                touchDragging: 1,
+                mouseDragging: 0,
+                touchDragging: 0,
                 releaseSwing: 1,
                 startAt: 0,
                 scrollBar: $wrap.find('.scrollbar'),
                 scrollBy: 1,
-                activatePageOn: 'click',
-                speed: 300,
+                speed: 500,
                 elasticBounds: 1,
                 dragHandle: 1,
                 dynamicHandle: 1,
