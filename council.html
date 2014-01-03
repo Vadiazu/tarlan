@@ -6,15 +6,15 @@
 
         <link type="text/css" rel="stylesheet" href="css/main.css">
         <link type="text/css" rel="stylesheet" href="font/stylesheet.css">
+        <link type="text/css" rel="stylesheet" href="js/select/select2.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-        <script src="js/slider/jquery.bxslider.min.js"></script>
-        <!--<link type="text/css" rel="stylesheet" href="js/slider/jquery.bxslider.css">-->
 
         <!--Плагины для форм-->
         <script src="js/jquery.infieldlabel.min.js"></script>
-        <script src="js/jquery.customSelect.min.js"></script>
+
         <script src="js/slider/jquery.bxslider.min.js"></script>
+        <script src="js/select/select2.min.js"></script>
 
         <!--[if lte IE 9]>
             <script type="text/javascript" src="js/html5shiv.js"></script>
@@ -165,16 +165,21 @@
             <span class="add-date"> 30 вересня 2013</span>
             <div class="desc-with-filter clear">
                 <div class="filter-dropdown fl-right">
-                    <select>
+                    <select id="works" class="custom-select">
                         <optgroup label="2013 рік">
-                            <option>«Великодні дива»</option>
-                            <option>«День Перемоги»</option>
-                            <option>«День святого Миколая»</option>
+                            <option data-text=", 2013 рік">«Великодні дива»</option>
+                            <option data-text=", 2013 рік">«День Перемоги»</option>
+                            <option data-text=", 2013 рік">«День святого Миколая»</option>
                         </optgroup>
                         <optgroup label="2012 рік">
-                            <option>«Великодні дива»</option>
-                            <option>«День Перемоги»</option>
-                            <option>«День святого Миколая»</option>
+                            <option data-text=", 2012 рік">«Великодні дива»</option>
+                            <option data-text=", 2012 рік">«День Перемоги»</option>
+                            <option data-text=", 2012 рік">«День святого Миколая»</option>
+                        </optgroup>
+                        <optgroup label="2011 рік">
+                            <option data-text=", 2011 рік">«Великодні дива»</option>
+                            <option data-text=", 2011 рік">«День Перемоги»</option>
+                            <option data-text=", 2011 рік">«День святого Миколая»</option>
                         </optgroup>
                     </select>
                 </div>

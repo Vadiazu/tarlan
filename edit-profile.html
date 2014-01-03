@@ -14,7 +14,7 @@
 
         <!--Плагины для форм-->
         <script src="js/jquery.infieldlabel.min.js"></script>
-        <script src="js/jquery.customSelect.min.js"></script>
+
 
         <script src="js/slider/jquery.bxslider.min.js"></script>
 
@@ -171,7 +171,25 @@
                     </tr>
                     <tr>
                         <td>Фтографія</td>
-                        <td><input type="file"/> <span>Учасники з фторафіями з’являться на головній сторінці сайту</span></td>
+                        <td>
+                            <div id="list" class="fl-left">
+                                <img id="loaded-image" class="thumb" src="#" alt="your image" />
+                            </div>
+                            <div id="file-input-container" class="fl-left">
+                                <div class="file-input-hidden">
+                                    <span class="file-load" for="">
+                                        <span class="btn-container" >Звантажити нову фотографію</span>
+                                        <input id="avatar-change" type="file" value="Звантажити файл"/>
+                                    </span>
+                                    або <a class="delete-existing" href="javascript: void(0);">видалити поточну</a>
+                                </div>
+                                <span class="file-load" for="">
+                                    <span class="btn-container" >Звантажити файл</span>
+                                    <input id="avatar-load" type="file" value="Звантажити файл"/>
+                                </span>
+                                <span>Учасники з фторафіями з’являться на головній сторінці сайту</span>
+                            </div>
+                        </td>
                     </tr>
                     <tr>
                         <td>Трохи про себе</td>

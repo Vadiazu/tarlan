@@ -186,4 +186,71 @@ $(document).ready(function(){
                 $(this).parents("body").find(".final-title-block").show();
                     $(this).parents(".block-all-competitions").removeClass("show");
     });
+
+    //стилизация селектов
+    if($(".custom-select").length){
+
+        function format(state) {
+            var originalOption = state.element;
+            return state.text + "<span class='additional-text'>" + $(originalOption).data('text') + "</span>";
+        }
+
+        $(".custom-select").select2({
+            width: 308,
+            minimumResultsForSearch: -1,
+            formatSelection: format,
+            escapeMarkup: function(m) { return m; }
+        });
+    }
+
+    if($(".simple-select").length){
+        $(".simple-select").select2({
+            width: 308,
+            minimumResultsForSearch: -1
+        });
+    }
+
+    /*-----------------adding avatar-----------------*/
+    function readURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $("#loaded-image").attr("src", e.target.result).fadeIn(300);
+
+                $("#file-input-container > .file-load").hide(0);
+                $(".file-input-hidden").show(200);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    function changeURL(input) {
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $("#loaded-image").attr("src", e.target.result).fadeIn(300);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#avatar-load").change(function(){
+        readURL(this);
+    });
+
+    $("#avatar-change").change(function(){
+        changeURL(this);
+    });
+
+    $(".delete-existing").on("click", function(){
+        $("#file-input-container > .file-load").show(0);
+        $(".file-input-hidden").hide(0);
+        $("#loaded-image").attr("src", "").hide(0);
+    });
 });
