@@ -440,6 +440,7 @@ body.home-page {
 
 .red-marker ul {
   list-style: none;
+  padding-left: 15px;
 }
 .red-marker li {
   font-size: 13px;
@@ -522,7 +523,7 @@ body.home-page {
   font-size: 10px;
   line-height: 10px;
   display: inline-block;
-  margin: 0 0 0 3px;
+  margin: 0;
   position: relative;
   top: -5px;
 }
@@ -530,6 +531,7 @@ body.home-page {
   display: inline-block;
   max-height: 36px;
   overflow: hidden;
+  margin-right: 10px;
 }
 .feed-unit.picture .feed-img-block {
   padding: 0 0 4px 4px;

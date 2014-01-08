@@ -139,6 +139,7 @@ body{
 .red-marker{
     ul{
       list-style: none;
+      padding-left: 15px;
     }
 
     li{
@@ -225,7 +226,7 @@ body{
             color: #959595;
             @include normal-font(10px, 10px);
             display: inline-block;
-            margin: 0 0 0 3px;
+            margin: 0;
             position: relative;
             top: -5px;
         }
@@ -234,6 +235,7 @@ body{
           display: inline-block;
           max-height: 36px;
           overflow: hidden;
+          margin-right: 10px;
         }
     }
 
