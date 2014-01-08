@@ -310,6 +310,7 @@ table {
 a {
   text-decoration: underline;
   color: #2e87a9;
+  outline: none;
 }
 a:hover {
   text-decoration: none;
@@ -2060,6 +2061,7 @@ textarea {
   top: -15px;
   color: #ed1c24;
   font-size: 28px;
+  z-index: 110 !important;
 }
 .edit-profile .table-profile-table tr td {
   padding: 15px 20px;
@@ -3452,4 +3454,14 @@ textarea {
   line-height: 18px;
   margin: 10px 0 0 0;
   width: 325px;
+}
+
+.ie8 .edit-profile .table-profile-table label {
+  z-index: -1;
+}
+.ie8 .edit-profile .table-profile-table label:before {
+  top: -7px;
+}
+.ie8 .medium-textarea {
+  overflow-x: hidden;
 }

@@ -5,11 +5,12 @@ $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
 
 a{
-  text-decoration: underline;
-  color: #2e87a9;
-  &:hover{
-    text-decoration: none;
-  }
+    text-decoration: underline;
+    color: #2e87a9;
+    outline: none;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 h1, h2, h3, h4, h5, h6{

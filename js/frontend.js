@@ -42,14 +42,14 @@ $(document).ready(function(){
             if(!$(this).hasClass("active")){
                 $(".with-sub").removeClass("active");
                 $(".menu-wrapper .drop-down").slideUp(200);
-                $(".drop-down-bg").slideDown(200);
-                $(this).children(".drop-down").slideDown(200);
+                $(".drop-down-bg").stop().slideDown(200);
+                $(this).children(".drop-down").stop().slideDown(200);
             }
         },
         function(){
             if($(".drop-down-bg").hasClass("active")){
                 if(!$(this).hasClass("active")){
-                    $(".menu-wrapper .drop-down").slideUp(200);
+                    $(".menu-wrapper .drop-down").stop().slideUp(200);
                     $(".menu-wrapper .drop-down a").each(function(){
                         if($(this).hasClass("active")){
                             $(this).parents(".with-sub").addClass("active");
