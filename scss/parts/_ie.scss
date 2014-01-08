@@ -1,0 +1,17 @@
+.ie8{
+    .edit-profile{
+        .table-profile-table{
+            label{
+                z-index: -1;
+
+                &:before{
+                    top: -7px;
+                }
+            }
+        }
+    }
+
+    .medium-textarea{
+        overflow-x: hidden;
+    }
+}
