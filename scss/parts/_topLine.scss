@@ -16,6 +16,7 @@
   .drop-down-holder{
     position: relative;
     cursor: pointer;
+      height: 35px;
     > span{
       border-bottom: 1px dashed #fff;
       position: relative;
@@ -27,16 +28,12 @@
       > span{
         border-bottom-color: transparent;
       }
-      .drop-down{
-        display: block;
-      }
     }
     .drop-down{
       position: absolute;
-      top: 0;
+      top: 100%;
       white-space: nowrap;
       line-height: normal;
-      padding-top: 35px;
       display: none;
       z-index: 100;
       .background-container{

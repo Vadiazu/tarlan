@@ -310,7 +310,7 @@ table {
 a {
   text-decoration: underline;
   color: #2e87a9;
-  outline: none;
+  outline: none !important;
 }
 a:hover {
   text-decoration: none;
@@ -1679,6 +1679,7 @@ textarea {
 .top-line .drop-down-holder {
   position: relative;
   cursor: pointer;
+  height: 35px;
 }
 .top-line .drop-down-holder > span {
   border-bottom: 1px dashed #fff;
@@ -1690,15 +1691,11 @@ textarea {
 .top-line .drop-down-holder:hover > span {
   border-bottom-color: transparent;
 }
-.top-line .drop-down-holder:hover .drop-down {
-  display: block;
-}
 .top-line .drop-down-holder .drop-down {
   position: absolute;
-  top: 0;
+  top: 100%;
   white-space: nowrap;
   line-height: normal;
-  padding-top: 35px;
   display: none;
   z-index: 100;
 }
@@ -3117,6 +3114,7 @@ textarea {
   width: 960px;
 }
 .winners-slide-block .tabs-container .scrollbar .handle {
+  top: 0;
   height: 7px;
   cursor: pointer;
   background: #fff;
@@ -3141,6 +3139,7 @@ textarea {
   line-height: 34px;
   display: inline-block;
   padding: 0 23px;
+  background: #fff;
   background: rgba(255, 255, 255, 0.7);
   -webkit-border-radius: 25px 25px 25px 25px/120px 120px 120px 120px;
   -moz-border-radius: 25px 25px 25px 25px/120px 120px 120px 120px;
@@ -3468,4 +3467,11 @@ textarea {
 }
 .ie8 .medium-textarea {
   overflow-x: hidden;
+}
+.ie8 .competition-block .work-search-block button[type="submit"] {
+  top: 1px;
+}
+.ie8 .tabs-container .scrollbar {
+  margin: 0;
+  top: 360px;
 }

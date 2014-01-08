@@ -1,13 +1,15 @@
 @import 'compass';
+@import 'compass/css3/pie';
 @import "normalize";
 @import "customMixins";
 $sprite-image-sprite-dimensions: true;
 @import "sprite-image/*.png";
 
+
 a{
     text-decoration: underline;
     color: #2e87a9;
-    outline: none;
+    outline: none!important;
     &:hover{
         text-decoration: none;
     }

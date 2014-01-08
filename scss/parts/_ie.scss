@@ -14,4 +14,19 @@
     .medium-textarea{
         overflow-x: hidden;
     }
+
+    .competition-block{
+        .work-search-block{
+            button[type="submit"]{
+                top: 1px;
+            }
+        }
+    }
+
+    .tabs-container{
+        .scrollbar{
+            margin: 0;
+            top: 360px;
+        }
+    }
 }

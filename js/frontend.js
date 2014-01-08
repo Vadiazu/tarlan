@@ -260,4 +260,10 @@ $(document).ready(function(){
             height: 36
         });
     }
+
+    //выпадающее меню
+    $(".drop-down-holder").hover(function () {
+        $(this).find(".drop-down").stop().slideToggle(300);
+    });
 });
+

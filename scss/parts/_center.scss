@@ -1502,7 +1502,7 @@
         }
 
         .custom-slider{
-          overflow: visible!important;
+            overflow: visible!important;
         }
         .scrollbar{
             background: none;
@@ -1510,6 +1510,7 @@
             width: 960px;
 
             .handle{
+                top: 0;
                 height: 7px;
                 cursor: pointer;
                 background: #fff;
@@ -1531,6 +1532,7 @@
         line-height: 34px;
         display: inline-block;
         padding: 0 23px;
+        background: #fff;
         background: rgba(255,255,255,0.70);
         @include border-radius(25px 25px 25px 25px/120px 120px 120px 120px);
 
