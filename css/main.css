@@ -2661,20 +2661,22 @@ textarea {
 
 .competition-block .competition-works .competition-work-unit .competition-work-info dt {
   color: #363636;
-  font-size: 18px;
-  line-height: 15px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
 }
 .competition-block .competition-works .competition-work-unit .competition-work-info dd {
   color: #acacac;
   font-style: italic;
   font-size: 12px;
-  line-height: 14px;
-  margin: 10px 0 0 0;
+  line-height: 18px;
+  margin: 5px 0 0 0;
 }
 .competition-block .competition-works .competition-work-unit .competition-work-info dd a {
   font-size: 12px;
-  line-height: 12px;
+  line-height: 18px;
   display: inline-block;
+  font-style: normal;
 }
 .competition-block .work-search-block label {
   color: #464646;
@@ -2698,6 +2700,17 @@ textarea {
 }
 .competition-block .competition-works {
   margin: 50px 0 0 0;
+}
+.competition-block .competition-works + .more-btn-block .more-btn span {
+  text-decoration: none;
+}
+.competition-block .competition-works + .more-btn-block .more-btn span .decoration {
+  border-bottom: 1px dashed #2e87a9;
+  background-color: transparent;
+  color: #2e87a9;
+}
+.competition-block .competition-works + .more-btn-block .more-btn:hover span .decoration {
+  border-bottom: none;
 }
 .competition-block .more-btn-block {
   margin: 0;
@@ -2749,7 +2762,7 @@ textarea {
 }
 
 .final-title-block {
-  margin-top: 55px;
+  margin-top: 45px;
   padding: 0 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2759,7 +2772,7 @@ textarea {
   color: #464646;
   font-size: 45px;
   line-height: 57px;
-  margin: 0 315px 60px 0;
+  margin: 0 315px 0 0;
 }
 .final-title-block h2 span {
   color: #c2c2c2;
@@ -2795,6 +2808,16 @@ textarea {
   line-height: 9px;
   margin: 0;
   font-style: italic;
+}
+
+.custom-height {
+  min-height: 270px;
+  margin-bottom: 20px;
+}
+.custom-height .end-date-text {
+  font-size: 12px;
+  color: #898989;
+  margin: 18px 0 0 23px;
 }
 
 .block-all-competitions {
@@ -2876,11 +2899,12 @@ textarea {
 }
 .block-all-competitions .competitions-slider .competitions-calendar-unit .current-concurs {
   position: absolute;
-  top: 2px;
+  top: 50%;
   left: -20px;
   background-position: 0 -900px;
   height: 13px;
   width: 13px;
+  margin-top: -12px;
 }
 .block-all-competitions .bx-prev, .block-all-competitions .bx-next {
   position: absolute;
@@ -2966,14 +2990,14 @@ textarea {
   opacity: 0;
 }
 .winners-slide-block .tabs-container .inner-tabs-container .btn-prev {
-  right: 10px;
-  background-position: 0 -738px;
+  left: 10px;
+  background-position: 0 -681px;
   height: 57px;
   width: 57px;
 }
 .winners-slide-block .tabs-container .inner-tabs-container .btn-next {
-  left: 10px;
-  background-position: 0 -681px;
+  right: 10px;
+  background-position: 0 -738px;
   height: 57px;
   width: 57px;
 }

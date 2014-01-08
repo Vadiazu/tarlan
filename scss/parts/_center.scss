@@ -1006,18 +1006,19 @@
             .competition-work-info{
                 dt{
                     color: #363636;
-                    @include normal-font(18px, 15px);
+                    font-style: normal;
+                    @include normal-font(14px, 18px);
                 }
 
                 dd{
                     color: #acacac;
                     font-style: italic;
-                    @include normal-font(12px, 14px);
-                    margin: 10px 0 0 0;
-
+                    @include normal-font(12px, 18px);
+                    margin: 5px 0 0 0;
                     a{
-                        @include normal-font(12px, 12px);
+                        @include normal-font(12px, 18px);
                         display: inline-block;
+                        font-style: normal;
                     }
                 }
             }
@@ -1052,6 +1053,23 @@
 
     .competition-works{
         margin: 50px 0 0 0;
+        + .more-btn-block{
+          .more-btn{
+            span{
+              text-decoration: none;
+              .decoration{
+                border-bottom: 1px dashed #2e87a9;
+                background-color: transparent;
+                color: #2e87a9;
+              }
+            }
+            &:hover span{
+              .decoration{
+                border-bottom: none;
+              }
+            }
+          }
+        }
     }
 
     .more-btn-block{
@@ -1112,14 +1130,14 @@
 }
 
 .final-title-block{
-    margin-top: 55px;
+    margin-top: 45px;
     padding: 0 20px;
     @include box-sizing(border-box);
 
     h2{
         color: #464646;
         @include normal-font(45px, 57px);
-        margin: 0 315px 60px 0;
+        margin: 0 315px 0 0;
 
         span{
             color: #c2c2c2;
@@ -1154,6 +1172,16 @@
             }
         }
     }
+}
+
+.custom-height{
+  min-height: 270px;
+  margin-bottom: 20px;
+  .end-date-text{
+    font-size: 12px;
+    color: #898989;
+    margin: 18px 0 0 23px;
+  }
 }
 
 .block-all-competitions{
@@ -1235,9 +1263,10 @@
 
             .current-concurs{
                 position: absolute;
-                top: 2px;
+                top: 50%;
                 left: -20px;
                 @include sprite-image-sprite(talant-icon);
+                margin-top: -12px;
             }
         }
     }
@@ -1337,13 +1366,13 @@
             }
 
             .btn-prev{
-                right: 10px;
-                @include sprite-image-sprite(big-right-arrow);
+                left: 10px;
+                @include sprite-image-sprite(big-left-arrow);
             }
 
             .btn-next{
-                left: 10px;
-                @include sprite-image-sprite(big-left-arrow);
+                right: 10px;
+                @include sprite-image-sprite(big-right-arrow);
             }
         }
 
