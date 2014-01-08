@@ -2655,10 +2655,10 @@ textarea {
   line-height: 27px;
   color: #9b9b9b;
   margin: 19px 257px 0 275px;
-  background: url(../img/arrow-right.png) right center no-repeat;
+  background: url(../img/arrow-right.png) right 25px no-repeat;
 }
 .block-with-counter .counter .participate-btn {
-  margin: 10px 0 0 0;
+  margin: 22px 0 0 0;
 }
 
 .competition-block .competition-works .competition-work-unit .competition-work-info dt {
@@ -2820,6 +2820,9 @@ textarea {
   font-size: 12px;
   color: #898989;
   margin: 18px 0 0 23px;
+}
+.custom-height + .container {
+  margin-top: 0;
 }
 
 .block-all-competitions {
