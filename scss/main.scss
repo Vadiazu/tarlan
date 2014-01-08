@@ -25,11 +25,18 @@ h1{
 
 h2{
     @include normal-font(24px, 24px);
+    + .events-unit{
+      margin-top: 30px;
+    }
 }
 
 h3{
     @include normal-font(18px,18px);
     @extend .robotoLight;
+    &.third-level{
+      font-weight: bold;
+      margin: 33px 0 20px;
+    }
 }
 
 img{
@@ -109,6 +116,10 @@ body{
   font-family: "robotobold";
 }
 
+.robotoLI{
+  font-family: "robotolightitalic";
+}
+
 .bordered-title{
     display: block;
     
@@ -126,13 +137,19 @@ body{
 }
 
 .red-marker{
-    list-style: none;
+    ul{
+      list-style: none;
+    }
 
     li{
         @include normal-font(13px, 27px);
         padding: 0 0 0 22px;
         background: url("../img/sprite-image/red-marker.png") left 6px no-repeat;
     }
+}
+
+.works-nav-block + .container, .share-block + .container{
+    margin-top: 40px;
 }
 
 .container{
@@ -195,7 +212,7 @@ body{
     }
 
     .feed-unit-details{
-        margin: 14px 0 0 0;
+        margin: 8px 0 0 0;
 
         .date{
             color: #ACACAC;
@@ -209,6 +226,14 @@ body{
             @include normal-font(10px, 10px);
             display: inline-block;
             margin: 0 0 0 3px;
+            position: relative;
+            top: -5px;
+        }
+
+        .feed-name{
+          display: inline-block;
+          max-height: 36px;
+          overflow: hidden;
         }
     }
 
@@ -220,12 +245,17 @@ body{
     }
 }
 
-figure{
+
+.image-container-text{
     padding: 15px 0;
     border-top: 1px solid #EBEBEB;
     border-bottom: 1px solid #EBEBEB;
     text-align: center;
 
+    figure{
+      display: inline-block;
+      text-align: right;
+    }
     figcaption{
         color: #636363;
         @include normal-font(13px, 13px);
@@ -234,6 +264,7 @@ figure{
     }
 }
 
+
 .center{
   .video-side.full{
     width: auto;
@@ -241,6 +272,8 @@ figure{
   .video-side{
     + .pagination{
       border-top: 1px solid #ebebeb;
+      margin: 0;
+      padding: 40px 0;
     }
   }
 

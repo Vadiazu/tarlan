@@ -3,8 +3,7 @@ $(document).ready(function(){
 
     //init main page photo vs video slider
     $(".photo-video-slider-start").bxSlider({
-        auto: true,
-        pause: 8000,
+        auto: false,
         slideWidth: 172,
         slideMargin: 35,
         minSlides: 5,
@@ -13,21 +12,15 @@ $(document).ready(function(){
         pager: false
     });
 
-    $(".partners-slider").bxSlider({
-        auto: true,
-        pause: 10000,
-        slideWidth: 135,
-        slideMargin: 10,
-        minSlides: 5,
-        maxSlides: 12,
-        moveSlides: 1,
-        pager: false,
-        controls: false
-    });
+    if($(".partners-slider").length){
+        $(".partners-slider").endlessScroll({
+            width: '100%',
+            speed: 30
+        });
+    }
 
     $(".custom-carousel-list").bxSlider({
-        auto: true,
-        pause: 10000,
+        auto: false,
         slideWidth: 110,
         slideMargin: 15,
         minSlides: 5,
@@ -176,15 +169,21 @@ $(document).ready(function(){
 
     //all concurs btn
     $(".all-concurs").on("click", function(){
-        $(this).parents("body").find(".works-nav-block").hide();
-            $(this).parents("body").find(".final-title-block").hide();
-                $(this).parents("body").find(".block-all-competitions").addClass("show");
+        var clickedItem = $(this);
+        clickedItem.parents("body").find(".works-nav-block").slideUp(400);
+        clickedItem.parents("body").find(".final-title-block").slideUp(400);
+        setTimeout (function(){
+            clickedItem.parents("body").find(".block-all-competitions").addClass("show").slideDown(400);
+        }, 400);
     });
 
     $(".collapse-btn").on("click", function(){
-        $(this).parents("body").find(".works-nav-block").show();
-                $(this).parents("body").find(".final-title-block").show();
-                    $(this).parents(".block-all-competitions").removeClass("show");
+        var clickedItem = $(this);
+        clickedItem.parents(".block-all-competitions").slideUp(400);
+        setTimeout(function(){
+            clickedItem.parents("body").find(".works-nav-block").slideDown(400);
+            clickedItem.parents("body").find(".final-title-block").slideDown(400);
+        }, 400);
     });
 
     //стилизация селектов
@@ -253,4 +252,12 @@ $(document).ready(function(){
         $(".file-input-hidden").hide(0);
         $("#loaded-image").attr("src", "").hide(0);
     });
+
+
+//    добавление троеточия
+    if($(".video-side").length || $(".photo-side").length){
+        $(".video-side .feed-name, .photo-side .feed-name").dotdotdot({
+            height: 36
+        });
+    }
 });

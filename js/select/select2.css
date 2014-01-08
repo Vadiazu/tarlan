@@ -33,13 +33,13 @@ Version: 3.4.5 Timestamp: Mon Nov  4 08:22:42 PST 2013
 .select2-container .select2-choice {
     background: #fff;
     display: block;
-    height: 37px;
+    height: 38px;
     padding: 0 0 0 8px;
     overflow: hidden;
     position: relative;
 
     white-space: nowrap;
-    line-height: 37px;
+    line-height: 38px;
     color: #464646;
     text-decoration: none;
     font-size: 14px;

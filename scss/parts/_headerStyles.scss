@@ -147,12 +147,30 @@
         display: block;
         &.facebook{
           @include sprite-image-sprite(facebook-header-ico);
+          &:hover{
+            @include sprite-image-sprite(facebook-header-ico-hover);
+          }
+          &:active{
+            @include sprite-image-sprite(facebook-header-ico-active);
+          }
         }
         &.vk{
           @include sprite-image-sprite(vk-header-ico);
+          &:hover{
+            @include sprite-image-sprite(vk-header-ico-hover);
+          }
+          &:active{
+            @include sprite-image-sprite(vk-header-ico-active);
+          }
         }
         &.youtube{
           @include sprite-image-sprite(youtube-header-btn);
+          &:hover{
+            @include sprite-image-sprite(youtube-header-btn-hover);
+          }
+          &:active{
+            @include sprite-image-sprite(youtube-header-btn-active);
+          }
         }
       }
     }

@@ -35,6 +35,18 @@
 }
 
 @font-face {
+    font-family: 'robotolightitalic';
+    src: url('Roboto-LightItalic-webfont.eot');
+    src: url('Roboto-LightItalic-webfont.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-LightItalic-webfont.woff') format('woff'),
+    url('Roboto-LightItalic-webfont.ttf') format('truetype'),
+    url('Roboto-LightItalic-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
     font-family: 'robotobold';
     src: url('Roboto-Bold-webfont.eot');
     src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),

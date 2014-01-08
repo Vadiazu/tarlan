@@ -8,6 +8,12 @@
         margin: 0 0 30px 0;
     }
 
+    .page-title{
+      + .add-date{
+        margin-top: -18px;
+      }
+    }
+
     .page-desc{
         padding: 0 0 25px 0;
         border-bottom: 1px solid #EBEBEB;
@@ -32,7 +38,12 @@
             }
 
             .filter-dropdown{
-                width: 308px;
+                text-align: right;
+                margin-right: 4px;
+                width: 300px;
+                .select2-container{
+                  text-align: left;
+                }
             }
         }
     }
@@ -82,10 +93,14 @@
             text-align: center;
             float: left;
             margin: 15px;
-
+            overflow: hidden;
+            a{
+              display: block;
+            }
             img{
                 max-width: 100%;
                 height: auto;
+                margin: 0 auto;
             }
         }
     }
@@ -96,6 +111,7 @@
     }
 
     .photo-side, .video-side{
+
         width: 460px;
 
         h3{
@@ -103,9 +119,10 @@
         }
 
         .feed-unit{
-            margin: 0 58px 60px 0;
+            margin: 0 58px 45px 0;
             width: 172px;
             float: left;
+            height: 209px;
         }
 
         .more-btn{
@@ -152,6 +169,9 @@
 
                     a{
                         display: block;
+                        img{
+                          margin: 0 auto;
+                        }
                     }
                 }
             }
@@ -232,9 +252,12 @@
 
     &.news{
       .events-info{
+        a + .date{
+          display: block;
+        }
         .date{
           @include normal-font(10px, 10px);
-          margin: 10px 0 15px 0;
+          margin: 7px 0 12px 0;
         }
       }
     }
@@ -569,24 +592,23 @@
     h3{
         color: #c2c2c2;
         @include normal-font(24px, 24px);
-        margin: 0 0 30px 0;
+        margin: 30px 0 30px 0;
     }
-
     .competition-work-unit{
         display: inline-block;
         vertical-align: top;
         width: 209px;
-        margin: 0 28px 50px 0;
+        margin: 0 28px 30px 0;
+        height: 294px;
 
         .competition-work-img{
             width: 209px;
             height: 209px;
             padding: 15px;
             @include box-sizing(border-box);
-            background: #fff url("../img/default-frame.png") no-repeat;
+            background: #fff;
             text-align: center;
             position: relative;
-            @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
 
             a{
                 display: block;
@@ -605,67 +627,65 @@
             &:before{
                 content: "";
                 position: absolute;
-                width: 91px;
-                height: 40px;
+                width: 209px;
+                height: 225px;
                 left: 0;
-                right: 0;
-                margin: 0 auto;
-                bottom: -18px;
+                top: 0;
+                background: url("../img/small-default-frame.png") no-repeat transparent;
             }
         }
 
+        &.second-place{
+          .competition-work-img:before{
+            background: url("../img/small-second-place-frame.png") no-repeat transparent;
+          }
+        }
+        &.first-place{
+          .competition-work-img:before{
+            background: url("../img/small-first-place-frame.png") no-repeat transparent;
+          }
+        }
+        &.third-place{
+          .competition-work-img:before{
+            background: url("../img/small-third-place-frame.png") no-repeat transparent;
+          }
+        }
+        &.simple-prize{
+          .competition-work-img:before{
+            background: url("../img/small-prize.png") no-repeat transparent;
+          }
+        }
+        &.people-award{
+          .competition-work-img:before{
+            background: url("../img/small-people-award.png") no-repeat transparent;
+          }
+        }
+
         .competition-work-info{
-            margin: 20px 0 0 0;
+            margin: 21px 0 0 0;
             padding: 0;
             text-align: center;
 
             dt{
-                @include normal-font(14px, 14px);
+                @include normal-font(11px, 18px);
                 color: #acacac;
                 font-style: italic;
             }
 
             dd{
-                font-size: 18px;
+                @include normal-font(14px, 18px);
                 color: #363636;
-                margin: 15px 0 0 0;
+                margin: 10px 0 0 0;
             }
         }
 
-        &.second-place{
-            .competition-work-img{
-                background: url("../img/second-place-frame.png") no-repeat;
-
-                &:before{
-                    background: url("../img/second-place-text.png") no-repeat;
-                }
-            }
-        }
-        &.first-place{
-            .competition-work-img{
-                background: url("../img/first-place-frame.png") no-repeat;
-
-                &:before{
-                    background: url("../img/first-place-text.png") no-repeat;
-                }
-            }
-        }
-        &.third-place{
-            .competition-work-img{
-                background: url("../img/third-place-frame.png") no-repeat;
-
-                &:before{
-                    background: url("../img/third-place-text.png") no-repeat;
-                }
-            }
-        }
     }
 }
 
 .competition-info-block{
     margin: 65px 0 0 0;
     padding: 0 0 9px 0;
-    border-bottom: 1px solid #B7C4CE;
+    background: url("../img/plener-line.png") left bottom no-repeat;
 
     h3{
         margin: 0;
@@ -775,16 +795,23 @@
 
 .work-inner{
     .work-img{
-        margin: 0 20px 0 0;
+        margin: 0 55px 0 0;
         width: 466px;
         height: 466px;
         padding: 15px;
         @include box-sizing(border-box);
-        background: #fff url("../img/big-default-frame.jpg") no-repeat;
+        background: #fff;
         text-align: center;
         position: relative;
-        @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
-
+        &:before{
+          content: '';
+          position: absolute;
+          background: url("../img/big-default-frame.jpg") no-repeat;
+          width: 466px;
+          height: 500px;
+          top: 0;
+          left: 0;
+        }
         a{
             display: block;
         }
@@ -800,8 +827,34 @@
         }
     }
 
+    &.second-place{
+      .work-img:before{
+        background: url("../img/big-second-place-frame.png") no-repeat transparent;
+      }
+    }
+    &.first-place{
+      .work-img:before{
+        background: url("../img/big-first-place-frame.png") no-repeat transparent;
+      }
+    }
+    &.third-place{
+      .work-img:before{
+        background: url("../img/big-third-place-frame.png") no-repeat transparent;
+      }
+    }
+    &.simple-prize{
+      .work-img:before{
+        background: url("../img/big-prize.png") no-repeat transparent;
+      }
+    }
+    &.people-award{
+      .work-img:before{
+        background: url("../img/big-people-award.png") no-repeat transparent;
+      }
+    }
+
     .work-details{
-        width: 460px;
+        width: 439px;
 
         .work-material{
             color: #898989;
@@ -831,7 +884,7 @@
             margin: 45px 0 0 0;
 
             h3{
-                font-style: italic;
+                @extend .robotoLI;
                 display: inline-block;
                 color: #363636;
                 @include normal-font(18px,18px);
@@ -861,13 +914,16 @@
 }
 
 .works-nav-block{
-    padding: 20px 20px 14px 20px;
+    padding: 18px 20px 17px 20px;
     @include box-sizing(border-box);
     border-bottom: 1px solid #E9E9E9;
 
     .current-block{
         margin: 0 250px;
         text-align: center;
+        a{
+          font-size: 14px;
+        }
     }
 
     .prev-arrow, .next-arrow, .prev-work, .next-work{
@@ -984,8 +1040,8 @@
         button[type="submit"]{
             position: absolute;
             right: 0;
-            top: 1px;
-            height: 35px;
+            top: -1px;
+            height: 38px;
         }
 
         .placeholder-container{
@@ -1111,6 +1167,7 @@
         @include opacity(1);
         position: relative;
         top: 0;
+        display: none;
     }
 
     .collapse-block{
@@ -1301,21 +1358,33 @@
                 }
 
                 &.first-place{
-                    .winner-picture{
-                        background: #fff url("../img/middle-first-place-frame.png") no-repeat;
+                    .winner-picture:before{
+                        background: url("../img/middle-first-place-frame.png") no-repeat transparent;
                     }
                 }
 
                 &.second-place{
-                    .winner-picture{
-                        background: #fff url("../img/middle-second-place-frame.png") no-repeat;
+                    .winner-picture:before{
+                        background: url("../img/middle-second-place-frame.png") no-repeat transparent;
                     }
                 }
 
                 &.third-place{
-                    .winner-picture{
-                        background: #fff url("../img/middle-third-place-frame.png") no-repeat;
+                    .winner-picture:before{
+                        background: url("../img/middle-third-place-frame.png") no-repeat transparent;
                     }
+                }
+
+                &.simple-prize{
+                  .winner-picture:before{
+                    background: url("../img/middle-prize.png") no-repeat transparent;
+                  }
+                }
+
+                &.people-award{
+                  .winner-picture:before{
+                    background: url("../img/middle-people-award.png") no-repeat transparent;
+                  }
                 }
 
                 .winner-picture{
@@ -1324,11 +1393,18 @@
                     height: 310px;
                     padding: 20px;
                     @include box-sizing(border-box);
-                    background: #fff url("../img/middle-first-place-frame.png") no-repeat;
+                    background: #fff;
                     text-align: center;
                     position: relative;
-                    @include box-shadow(0 4px 7px rgba(0, 0, 0, 0.2));
-
+                    &:before{
+                      content: '';
+                      background: url("../img/middle-default-frame.png") no-repeat transparent;
+                      height: 342px;
+                      position: absolute;
+                      width: 311px;
+                      left: 0;
+                      top: 0;
+                    }
                     a{
                         display: block;
                     }

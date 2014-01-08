@@ -9,6 +9,9 @@
         height: 333px;
         background: url("../img/photo-video-bg.png") top center no-repeat;
 
+        .bordered-title a{
+          color: #ffffff;
+        }
         .photo-video-inner{
             max-width: 1410px;
             height: 100%;
@@ -41,7 +44,7 @@
 
                 .bx-prev, .bx-next{
                     position: absolute;
-                    top: -40px;
+                    top: -55px;
                     text-indent: -999999px;
                 }
 
@@ -73,6 +76,10 @@
                     vertical-align: middle;
                     text-align: center;
                     float: none!important;
+                    width: 135px;
+                    img{
+                      margin: 0 auto;
+                    }
                 }
             }
         }
