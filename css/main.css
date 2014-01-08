@@ -653,6 +653,10 @@ body.home-page {
   padding-top: 15px;
   position: relative;
 }
+.main-header .header-top-line > .center-wrapper {
+  z-index: 5;
+  position: relative;
+}
 .main-header .header-top-line .drop-down-bg {
   position: absolute;
   background: #ffffff;
@@ -660,9 +664,9 @@ body.home-page {
   right: 0;
   height: 26px;
   top: 100%;
-  -webkit-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.12);
   display: none;
 }
 .main-header .header-top-line .drop-down-bg.active {
