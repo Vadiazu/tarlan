@@ -3,10 +3,6 @@
         .table-profile-table{
             label{
                 z-index: -1;
-
-                &:before{
-                    top: -7px;
-                }
             }
         }
     }
@@ -28,5 +24,10 @@
             margin: 0;
             top: 360px;
         }
+    }
+
+    input[type="text"], input[type="email"], input[type="password"], textarea{
+        border: 2px solid #CDCDCD;
+        line-height: 35px;
     }
 }

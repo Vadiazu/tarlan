@@ -3462,9 +3462,6 @@ textarea {
 .ie8 .edit-profile .table-profile-table label {
   z-index: -1;
 }
-.ie8 .edit-profile .table-profile-table label:before {
-  top: -7px;
-}
 .ie8 .medium-textarea {
   overflow-x: hidden;
 }
@@ -3474,4 +3471,8 @@ textarea {
 .ie8 .tabs-container .scrollbar {
   margin: 0;
   top: 360px;
+}
+.ie8 input[type="text"], .ie8 input[type="email"], .ie8 input[type="password"], .ie8 textarea {
+  border: 2px solid #CDCDCD;
+  line-height: 35px;
 }
